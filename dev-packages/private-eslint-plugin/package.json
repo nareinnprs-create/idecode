@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "@opraiz/eslint-plugin",
+  "version": "1.72.0",
+  "description": "Custom ESLint rules for developing OPRAIZ IDECODE extensions and applications",
+  "main": "index.js",
+  "scripts": {
+    "afterInstall": "npm run compile",
+    "compile": "opraizext compile"
+  },
+  "dependencies": {
+    "@opraiz/ext-scripts": "1.72.0",
+    "@opraiz/re-exports": "1.72.0",
+    "js-levenshtein": "^1.1.6"
+  }
+}

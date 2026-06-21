@@ -1,0 +1,74 @@
+{
+  "name": "@opraiz/ai-ide",
+  "version": "1.72.0",
+  "description": "AI IDE Agents Extension",
+  "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eclipse-theia/theia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eclipse-theia/theia/issues"
+  },
+  "homepage": "https://github.com/eclipse-theia/theia",
+  "keywords": [
+    "theia-extension"
+  ],
+  "dependencies": {
+    "@opraiz/ai-chat": "1.72.0",
+    "@opraiz/ai-chat-ui": "1.72.0",
+    "@opraiz/ai-core": "1.72.0",
+    "@opraiz/ai-mcp": "1.72.0",
+    "@opraiz/ai-terminal": "1.72.0",
+    "@opraiz/core": "1.72.0",
+    "@opraiz/debug": "1.72.0",
+    "@opraiz/editor": "1.72.0",
+    "@opraiz/file-search": "1.72.0",
+    "@opraiz/filesystem": "1.72.0",
+    "@opraiz/markers": "1.72.0",
+    "@opraiz/monaco": "1.72.0",
+    "@opraiz/navigator": "1.72.0",
+    "@opraiz/preferences": "1.72.0",
+    "@opraiz/scm": "1.72.0",
+    "@opraiz/search-in-workspace": "1.72.0",
+    "@opraiz/task": "1.72.0",
+    "@opraiz/terminal": "1.72.0",
+    "@opraiz/workspace": "1.72.0",
+    "date-fns": "^4.1.0",
+    "ignore": "^6.0.2",
+    "js-yaml": "^4.2.0",
+    "minimatch": "^10.2.5",
+    "puppeteer-core": "^25.1.0",
+    "simple-git": "^3.36.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@opraiz/cli": "1.72.0",
+    "@opraiz/test": "1.72.0"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/frontend-module",
+      "secondaryWindow": "lib/browser/frontend-module",
+      "backend": "lib/node/backend-module"
+    }
+  ],
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "opraizext build",
+    "clean": "opraizext clean",
+    "compile": "opraizext compile",
+    "lint": "opraizext lint",
+    "test": "opraizext test",
+    "watch": "opraizext watch"
+  },
+  "nyc": {
+    "extends": "../../configs/nyc.json"
+  },
+  "gitHead": "21358137e41342742707f660b8e222f940a27652"
+}

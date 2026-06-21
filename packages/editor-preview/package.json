@@ -1,0 +1,51 @@
+{
+  "name": "@opraiz/editor-preview",
+  "version": "1.72.0",
+  "description": "OPRAIZ IDECODE - Editor Preview Extension",
+  "dependencies": {
+    "@opraiz/core": "1.72.0",
+    "@opraiz/editor": "1.72.0",
+    "@opraiz/navigator": "1.72.0",
+    "tslib": "^2.8.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/editor-preview-frontend-module",
+      "backend": "lib/node/editor-preview-backend-module"
+    }
+  ],
+  "keywords": [
+    "theia-extension"
+  ],
+  "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eclipse-theia/theia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eclipse-theia/theia/issues"
+  },
+  "homepage": "https://github.com/eclipse-theia/theia",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "opraizext build",
+    "clean": "opraizext clean",
+    "compile": "opraizext compile",
+    "lint": "opraizext lint",
+    "test": "opraizext test",
+    "watch": "opraizext watch"
+  },
+  "devDependencies": {
+    "@opraiz/ext-scripts": "1.72.0"
+  },
+  "nyc": {
+    "extends": "../../configs/nyc.json"
+  },
+  "gitHead": "21358137e41342742707f660b8e222f940a27652"
+}

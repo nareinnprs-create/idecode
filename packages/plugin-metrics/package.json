@@ -1,0 +1,53 @@
+{
+  "name": "@opraiz/plugin-metrics",
+  "version": "1.72.0",
+  "description": "OPRAIZ IDECODE - Plugin Metrics",
+  "dependencies": {
+    "@opraiz/core": "1.72.0",
+    "@opraiz/metrics": "1.72.0",
+    "@theia/monaco-editor-core": "1.108.201",
+    "@opraiz/plugin": "1.72.0",
+    "@opraiz/plugin-ext": "1.72.0",
+    "tslib": "^2.8.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/plugin-metrics-frontend-module",
+      "backend": "lib/node/plugin-metrics-backend-module"
+    }
+  ],
+  "keywords": [
+    "theia-extension"
+  ],
+  "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eclipse-theia/theia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theia-ide/theia/issues"
+  },
+  "homepage": "https://github.com/theia-ide/theia",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "opraizext build",
+    "clean": "opraizext clean",
+    "compile": "opraizext compile",
+    "lint": "opraizext lint",
+    "test": "opraizext test",
+    "watch": "opraizext watch"
+  },
+  "devDependencies": {
+    "@opraiz/ext-scripts": "1.72.0"
+  },
+  "nyc": {
+    "extends": "../../configs/nyc.json"
+  },
+  "gitHead": "21358137e41342742707f660b8e222f940a27652"
+}

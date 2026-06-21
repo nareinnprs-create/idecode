@@ -1,0 +1,39 @@
+{
+  "name": "@opraiz/terminal-manager",
+  "version": "1.72.0",
+  "description": "OPRAIZ IDECODE - Terminal Manager Extension",
+  "keywords": [
+    "theia-extension"
+  ],
+  "homepage": "https://github.com/eclipse-theia/theia",
+  "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eclipse-theia/theia.git"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "opraizext build",
+    "clean": "opraizext clean",
+    "compile": "opraizext compile",
+    "lint": "opraizext lint",
+    "test": "opraizext test",
+    "watch": "opraizext watch"
+  },
+  "dependencies": {
+    "@opraiz/core": "1.72.0",
+    "@opraiz/preferences": "1.72.0",
+    "@opraiz/terminal": "1.72.0"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/terminal-manager-frontend-module"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

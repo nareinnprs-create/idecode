@@ -1,0 +1,65 @@
+{
+  "name": "@opraiz/vsx-registry",
+  "version": "1.72.0",
+  "description": "OPRAIZ IDECODE - VSX Registry",
+  "dependencies": {
+    "@opraiz/core": "1.72.0",
+    "@opraiz/filesystem": "1.72.0",
+    "@opraiz/navigator": "1.72.0",
+    "@opraiz/ovsx-client": "1.72.0",
+    "@opraiz/plugin-ext": "1.72.0",
+    "@opraiz/plugin-ext-vscode": "1.72.0",
+    "@opraiz/preferences": "1.72.0",
+    "@opraiz/workspace": "1.72.0",
+    "limiter": "^2.1.0",
+    "luxon": "^2.5.2",
+    "p-debounce": "^2.1.0",
+    "semver": "^7.8.1",
+    "tslib": "^2.8.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "theia-extension"
+  ],
+  "theiaExtensions": [
+    {
+      "frontend": "lib/common/vsx-registry-common-module",
+      "backend": "lib/common/vsx-registry-common-module"
+    },
+    {
+      "frontend": "lib/browser/vsx-registry-frontend-module",
+      "backend": "lib/node/vsx-registry-backend-module"
+    }
+  ],
+  "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eclipse-theia/theia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eclipse-theia/theia/issues"
+  },
+  "homepage": "https://github.com/eclipse-theia/theia",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "opraizext build",
+    "clean": "opraizext clean",
+    "compile": "opraizext compile",
+    "lint": "opraizext lint",
+    "test": "opraizext test",
+    "watch": "opraizext watch"
+  },
+  "devDependencies": {
+    "@opraiz/ext-scripts": "1.72.0",
+    "@types/luxon": "^2.4.0"
+  },
+  "nyc": {
+    "extends": "../../configs/nyc.json"
+  },
+  "gitHead": "21358137e41342742707f660b8e222f940a27652"
+}

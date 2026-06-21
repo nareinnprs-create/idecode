@@ -1,0 +1,58 @@
+{
+  "name": "@opraiz/mini-browser",
+  "version": "1.72.0",
+  "description": "OPRAIZ IDECODE - Mini-Browser Extension",
+  "dependencies": {
+    "@opraiz/core": "1.72.0",
+    "@opraiz/filesystem": "1.72.0",
+    "@types/mime-types": "^2.1.4",
+    "mime-types": "^2.1.35",
+    "pdfobject": "^2.3.1",
+    "tslib": "^2.8.1",
+    "vhost": "^3.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "theiaExtensions": [
+    {
+      "backend": "lib/node/mini-browser-backend-module",
+      "frontend": "lib/browser/mini-browser-frontend-module"
+    },
+    {
+      "frontend": "lib/browser/environment/mini-browser-environment-module",
+      "frontendElectron": "lib/electron-browser/environment/electron-mini-browser-environment-module"
+    }
+  ],
+  "keywords": [
+    "theia-extension"
+  ],
+  "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eclipse-theia/theia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eclipse-theia/theia/issues"
+  },
+  "homepage": "https://github.com/eclipse-theia/theia",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "opraizext build",
+    "clean": "opraizext clean",
+    "compile": "opraizext compile",
+    "lint": "opraizext lint",
+    "test": "opraizext test",
+    "watch": "opraizext watch"
+  },
+  "devDependencies": {
+    "@opraiz/ext-scripts": "1.72.0"
+  },
+  "nyc": {
+    "extends": "../../configs/nyc.json"
+  },
+  "gitHead": "21358137e41342742707f660b8e222f940a27652"
+}

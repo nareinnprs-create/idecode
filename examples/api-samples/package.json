@@ -1,0 +1,69 @@
+{
+  "private": true,
+  "name": "@opraiz/api-samples",
+  "version": "1.72.0",
+  "description": "OPRAIZ IDECODE - Example code to demonstrate OPRAIZ IDECODE API",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@opraiz/ai-chat": "1.72.0",
+    "@opraiz/ai-chat-ui": "1.72.0",
+    "@opraiz/ai-code-completion": "1.72.0",
+    "@opraiz/ai-core": "1.72.0",
+    "@opraiz/ai-mcp": "1.72.0",
+    "@opraiz/ai-mcp-server": "1.72.0",
+    "@opraiz/core": "1.72.0",
+    "@opraiz/file-search": "1.72.0",
+    "@opraiz/filesystem": "1.72.0",
+    "@opraiz/monaco": "1.72.0",
+    "@theia/monaco-editor-core": "1.108.201",
+    "@opraiz/output": "1.72.0",
+    "@opraiz/ovsx-client": "1.72.0",
+    "@opraiz/search-in-workspace": "1.72.0",
+    "@opraiz/test": "1.72.0",
+    "@opraiz/toolbar": "1.72.0",
+    "@opraiz/vsx-registry": "1.72.0",
+    "@opraiz/workspace": "1.72.0",
+    "zod": "^4.4.3"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/api-samples-frontend-module",
+      "backend": "lib/node/api-samples-backend-module"
+    },
+    {
+      "electronMain": "lib/electron-main/update/sample-updater-main-module",
+      "frontendElectron": "lib/electron-browser/updater/sample-updater-frontend-module"
+    },
+    {
+      "frontendOnly": "lib/browser-only/api-samples-frontend-only-module"
+    },
+    {
+      "frontendPreload": "lib/browser/api-samples-preload-module"
+    }
+  ],
+  "keywords": [
+    "theia-extension"
+  ],
+  "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eclipse-theia/theia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eclipse-theia/theia/issues"
+  },
+  "homepage": "https://github.com/eclipse-theia/theia",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "lint": "opraizext lint",
+    "build": "opraizext build",
+    "watch": "opraizext watch",
+    "clean": "opraizext clean"
+  },
+  "devDependencies": {
+    "@opraiz/ext-scripts": "1.72.0"
+  }
+}
