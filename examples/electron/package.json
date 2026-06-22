@@ -111,10 +111,10 @@
     "clean": "opraizext clean",
     "compile": "tsc -b",
     "lint": "opraizext lint",
-    "pack": "npm run build && electron-builder --config electron-builder.yml",
-    "pack:win": "npm run build && electron-builder --config electron-builder.yml --win",
-    "pack:mac": "npm run build && electron-builder --config electron-builder.yml --mac",
-    "pack:linux": "npm run build && electron-builder --config electron-builder.yml --linux",
+    "pack": "npm run build && npx electron-builder --config electron-builder.yml",
+    "pack:win": "npm run build && npx electron-builder --config electron-builder.yml --win",
+    "pack:mac": "npm run build && npx electron-builder --config electron-builder.yml --mac",
+    "pack:linux": "npm run build && npx electron-builder --config electron-builder.yml --linux",
     "rebuild": "opraiz rebuild:electron --cacheRoot ../..",
     "start": "opraiz start --plugins=local-dir:../../plugins --ovsx-router-config=../ovsx-router-config.json",
     "start:debug": "npm run -s start -- --log-level=debug --remote-debugging-port=9222",
@@ -126,7 +126,6 @@
   },
   "devDependencies": {
     "@opraiz/cli": "1.0.0",
-    "electron": "39.8.7",
-    "electron-builder": "^25.1.8"
+    "electron": "39.8.7"
   }
 }
