@@ -1,13 +1,13 @@
 {
   "name": "@opraiz/test",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Test Extension",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/editor": "1.72.0",
-    "@opraiz/filesystem": "1.72.0",
-    "@opraiz/navigator": "1.72.0",
-    "@opraiz/terminal": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/editor": "1.0.0",
+    "@opraiz/filesystem": "1.0.0",
+    "@opraiz/navigator": "1.0.0",
+    "@opraiz/terminal": "1.0.0",
     "xterm": "^5.3.0",
     "xterm-addon-fit": "^0.8.0"
   },
@@ -45,7 +45,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

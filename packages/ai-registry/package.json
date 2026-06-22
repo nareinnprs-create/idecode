@@ -1,12 +1,12 @@
 {
   "name": "@opraiz/ai-registry",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - AI Registry Integration",
   "dependencies": {
-    "@opraiz/ai-core": "1.72.0",
-    "@opraiz/ai-mcp": "1.72.0",
-    "@opraiz/core": "1.72.0",
-    "@opraiz/vsx-registry": "1.72.0"
+    "@opraiz/ai-core": "1.0.0",
+    "@opraiz/ai-mcp": "1.0.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/vsx-registry": "1.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -43,7 +43,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

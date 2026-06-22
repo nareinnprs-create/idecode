@@ -1,9 +1,9 @@
 {
   "name": "@opraiz/process",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE process support.",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
+    "@opraiz/core": "1.0.0",
     "node-pty": "1.2.0-beta.12",
     "string-argv": "^0.1.2",
     "tslib": "^2.8.1"
@@ -45,7 +45,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

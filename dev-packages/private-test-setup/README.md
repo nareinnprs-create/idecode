@@ -12,7 +12,7 @@
 
 ## Description
 
-The `@theia/test-setup` contributes a setup script for mocha executed tests in Theia.
+The `@opraiz/test-setup` contributes a setup script for mocha executed tests in OPRAIZ IDECODE.
 This setup script is executed before any test file is loaded or compiled.
 This is for example useful for globals which must exist before dependencies are loaded.
 

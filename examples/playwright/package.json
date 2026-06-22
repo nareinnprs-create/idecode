@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/playwright",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "System tests for OPRAIZ IDECODE",
   "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
   "repository": {
@@ -37,7 +37,7 @@
     "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@opraiz/cli": "1.72.0",
+    "@opraiz/cli": "1.0.0",
     "@types/fs-extra": "^9.0.13",
     "allure-commandline": "^2.42.0",
     "allure-playwright": "^2.15.1",

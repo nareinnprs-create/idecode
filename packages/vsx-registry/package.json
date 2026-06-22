@@ -1,16 +1,16 @@
 {
   "name": "@opraiz/vsx-registry",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - VSX Registry",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/filesystem": "1.72.0",
-    "@opraiz/navigator": "1.72.0",
-    "@opraiz/ovsx-client": "1.72.0",
-    "@opraiz/plugin-ext": "1.72.0",
-    "@opraiz/plugin-ext-vscode": "1.72.0",
-    "@opraiz/preferences": "1.72.0",
-    "@opraiz/workspace": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/filesystem": "1.0.0",
+    "@opraiz/navigator": "1.0.0",
+    "@opraiz/ovsx-client": "1.0.0",
+    "@opraiz/plugin-ext": "1.0.0",
+    "@opraiz/plugin-ext-vscode": "1.0.0",
+    "@opraiz/preferences": "1.0.0",
+    "@opraiz/workspace": "1.0.0",
     "limiter": "^2.1.0",
     "luxon": "^2.5.2",
     "p-debounce": "^2.1.0",
@@ -55,7 +55,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0",
+    "@opraiz/ext-scripts": "1.0.0",
     "@types/luxon": "^2.4.0"
   },
   "nyc": {

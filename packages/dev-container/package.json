@@ -1,12 +1,12 @@
 {
   "name": "@opraiz/dev-container",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Editor Preview Extension",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/output": "1.72.0",
-    "@opraiz/remote": "1.72.0",
-    "@opraiz/workspace": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/output": "1.0.0",
+    "@opraiz/remote": "1.0.0",
+    "@opraiz/workspace": "1.0.0",
     "dockerode": "^4.0.12",
     "jsonc-parser": "^3.3.1",
     "uuid": "^8.3.2"
@@ -45,7 +45,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0",
+    "@opraiz/ext-scripts": "1.0.0",
     "@types/dockerode": "^3.3.47"
   },
   "nyc": {

@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/plugin",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Plugin API",
   "types": "./src/theia.d.ts",
   "publishConfig": {
@@ -27,7 +27,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

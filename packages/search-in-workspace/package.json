@@ -1,14 +1,14 @@
 {
   "name": "@opraiz/search-in-workspace",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Search in workspace",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/editor": "1.72.0",
-    "@opraiz/filesystem": "1.72.0",
-    "@opraiz/navigator": "1.72.0",
-    "@opraiz/process": "1.72.0",
-    "@opraiz/workspace": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/editor": "1.0.0",
+    "@opraiz/filesystem": "1.0.0",
+    "@opraiz/navigator": "1.0.0",
+    "@opraiz/process": "1.0.0",
+    "@opraiz/workspace": "1.0.0",
     "@vscode/ripgrep": "^1.18.0",
     "minimatch": "^10.2.5",
     "react-textarea-autosize": "^8.5.9",
@@ -51,7 +51,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "gitHead": "21358137e41342742707f660b8e222f940a27652"
 }

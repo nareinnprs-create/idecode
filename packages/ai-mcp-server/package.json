@@ -1,11 +1,11 @@
 {
   "name": "@opraiz/ai-mcp-server",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - MCP Server",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "@opraiz/core": "1.72.0",
-    "@opraiz/workspace": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/workspace": "1.0.0",
     "zod": "^4.4.3"
   },
   "publishConfig": {
@@ -43,7 +43,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

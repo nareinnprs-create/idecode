@@ -1,14 +1,14 @@
 {
   "name": "@opraiz/notebook",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Notebook Extension",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/editor": "1.72.0",
-    "@opraiz/filesystem": "1.72.0",
-    "@opraiz/monaco": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/editor": "1.0.0",
+    "@opraiz/filesystem": "1.0.0",
+    "@opraiz/monaco": "1.0.0",
     "@theia/monaco-editor-core": "1.108.201",
-    "@opraiz/outline-view": "1.72.0",
+    "@opraiz/outline-view": "1.0.0",
     "advanced-mark.js": "^2.7.1",
     "react-perfect-scrollbar": "^1.5.8",
     "tslib": "^2.8.1"
@@ -47,7 +47,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0",
+    "@opraiz/ext-scripts": "1.0.0",
     "@types/markdown-it": "^12.2.3",
     "@types/vscode-notebook-renderer": "^1.72.4"
   },

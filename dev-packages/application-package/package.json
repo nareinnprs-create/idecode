@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/application-package",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE application package API.",
   "publishConfig": {
     "access": "public"
@@ -29,7 +29,7 @@
     "watch": "opraizext watch"
   },
   "dependencies": {
-    "@opraiz/request": "1.72.0",
+    "@opraiz/request": "1.0.0",
     "@types/fs-extra": "^4.0.15",
     "@types/semver": "^7.7.1",
     "@types/write-json-file": "^2.2.1",
@@ -43,7 +43,7 @@
     "write-json-file": "^2.3.0"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

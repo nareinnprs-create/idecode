@@ -1,15 +1,15 @@
 {
   "name": "@opraiz/ai-scanoss",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - SCANOSS AI Integration",
   "dependencies": {
-    "@opraiz/ai-chat": "1.72.0",
-    "@opraiz/ai-chat-ui": "1.72.0",
-    "@opraiz/ai-core": "1.72.0",
-    "@opraiz/core": "1.72.0",
-    "@opraiz/monaco": "1.72.0",
+    "@opraiz/ai-chat": "1.0.0",
+    "@opraiz/ai-chat-ui": "1.0.0",
+    "@opraiz/ai-core": "1.0.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/monaco": "1.0.0",
     "@theia/monaco-editor-core": "1.108.201",
-    "@opraiz/scanoss": "1.72.0"
+    "@opraiz/scanoss": "1.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -46,7 +46,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

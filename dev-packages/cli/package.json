@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/cli",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE CLI.",
   "publishConfig": {
     "access": "public"
@@ -32,12 +32,12 @@
     "clean": "opraizext clean"
   },
   "dependencies": {
-    "@opraiz/application-manager": "1.72.0",
-    "@opraiz/application-package": "1.72.0",
-    "@opraiz/ffmpeg": "1.72.0",
-    "@opraiz/localization-manager": "1.72.0",
-    "@opraiz/ovsx-client": "1.72.0",
-    "@opraiz/request": "1.72.0",
+    "@opraiz/application-manager": "1.0.0",
+    "@opraiz/application-package": "1.0.0",
+    "@opraiz/ffmpeg": "1.0.0",
+    "@opraiz/localization-manager": "1.0.0",
+    "@opraiz/ovsx-client": "1.0.0",
+    "@opraiz/request": "1.0.0",
     "@types/chai": "^4.3.0",
     "@types/mocha": "^10.0.10",
     "@types/node-fetch": "^2.6.13",

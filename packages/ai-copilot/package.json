@@ -1,11 +1,11 @@
 {
   "name": "@opraiz/ai-copilot",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - GitHub Copilot Integration",
   "dependencies": {
-    "@opraiz/ai-core": "1.72.0",
-    "@opraiz/ai-openai": "1.72.0",
-    "@opraiz/core": "1.72.0",
+    "@opraiz/ai-core": "1.0.0",
+    "@opraiz/ai-openai": "1.0.0",
+    "@opraiz/core": "1.0.0",
     "openai": "^6.39.1",
     "tslib": "^2.8.1"
   },
@@ -43,7 +43,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

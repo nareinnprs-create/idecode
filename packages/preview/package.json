@@ -1,12 +1,12 @@
 {
   "name": "@opraiz/preview",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Preview Extension",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/editor": "1.72.0",
-    "@opraiz/mini-browser": "1.72.0",
-    "@opraiz/monaco": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/editor": "1.0.0",
+    "@opraiz/mini-browser": "1.0.0",
+    "@opraiz/monaco": "1.0.0",
     "@types/highlight.js": "^10.1.0",
     "highlight.js": "10.4.1",
     "tslib": "^2.8.1"
@@ -46,7 +46,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

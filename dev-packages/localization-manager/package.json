@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/localization-manager",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE localization manager API.",
   "publishConfig": {
     "access": "public"
@@ -41,7 +41,7 @@
     "typescript": "~5.9.3"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

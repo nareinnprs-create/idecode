@@ -1,13 +1,13 @@
 {
   "name": "@opraiz/remote",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Remote",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/filesystem": "1.72.0",
-    "@opraiz/userstorage": "1.72.0",
-    "@opraiz/variable-resolver": "1.72.0",
-    "@opraiz/workspace": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/filesystem": "1.0.0",
+    "@opraiz/userstorage": "1.0.0",
+    "@opraiz/variable-resolver": "1.0.0",
+    "@opraiz/workspace": "1.0.0",
     "archiver": "^5.3.2",
     "decompress": "^4.2.1",
     "decompress-tar": "^4.1.1",
@@ -56,7 +56,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0",
+    "@opraiz/ext-scripts": "1.0.0",
     "@types/archiver": "^5.3.4",
     "@types/decompress": "^4.2.7",
     "@types/express-http-proxy": "^1.6.7",

@@ -1,10 +1,10 @@
 {
   "name": "@opraiz/mini-browser",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Mini-Browser Extension",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/filesystem": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/filesystem": "1.0.0",
     "@types/mime-types": "^2.1.4",
     "mime-types": "^2.1.35",
     "pdfobject": "^2.3.1",
@@ -49,7 +49,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

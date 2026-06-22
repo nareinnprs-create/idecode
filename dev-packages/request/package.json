@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/request",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE Proxy-Aware Request Service",
   "publishConfig": {
     "access": "public"

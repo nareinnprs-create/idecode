@@ -1,15 +1,15 @@
 {
   "name": "@opraiz/monaco",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Monaco Extension",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/editor": "1.72.0",
-    "@opraiz/filesystem": "1.72.0",
-    "@opraiz/markers": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/editor": "1.0.0",
+    "@opraiz/filesystem": "1.0.0",
+    "@opraiz/markers": "1.0.0",
     "@theia/monaco-editor-core": "1.108.201",
-    "@opraiz/outline-view": "1.72.0",
-    "@opraiz/workspace": "1.72.0",
+    "@opraiz/outline-view": "1.0.0",
+    "@opraiz/workspace": "1.0.0",
     "fast-plist": "^0.1.3",
     "idb": "^4.0.5",
     "jsonc-parser": "^3.3.1",
@@ -52,7 +52,7 @@
     "watch": "opraizext watch"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

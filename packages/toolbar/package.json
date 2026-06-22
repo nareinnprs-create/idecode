@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/toolbar",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Toolbar",
   "keywords": [
     "theia-extension"
@@ -28,15 +28,15 @@
     "update:icons": "node ./update-icons.js"
   },
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/editor": "1.72.0",
-    "@opraiz/file-search": "1.72.0",
-    "@opraiz/filesystem": "1.72.0",
-    "@opraiz/monaco": "1.72.0",
+    "@opraiz/core": "1.0.0",
+    "@opraiz/editor": "1.0.0",
+    "@opraiz/file-search": "1.0.0",
+    "@opraiz/filesystem": "1.0.0",
+    "@opraiz/monaco": "1.0.0",
     "@theia/monaco-editor-core": "1.108.201",
-    "@opraiz/search-in-workspace": "1.72.0",
-    "@opraiz/userstorage": "1.72.0",
-    "@opraiz/workspace": "1.72.0",
+    "@opraiz/search-in-workspace": "1.0.0",
+    "@opraiz/userstorage": "1.0.0",
+    "@opraiz/workspace": "1.0.0",
     "ajv": "^6.15.0",
     "jsonc-parser": "^3.3.1",
     "perfect-scrollbar": "1.5.5",

@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/ffmpeg",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE FFMPEG reader utility.",
   "publishConfig": {
     "access": "public"

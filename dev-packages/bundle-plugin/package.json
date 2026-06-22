@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/bundle-plugin",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "Contains bundler plugins for OPRAIZ IDECODE.",
   "publishConfig": {
     "access": "public"

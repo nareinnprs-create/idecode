@@ -1,12 +1,12 @@
 {
   "private": true,
   "name": "@opraiz/api-provider-sample",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE - Example code to demonstrate OPRAIZ IDECODE API Provider Extensions",
   "dependencies": {
-    "@opraiz/core": "1.72.0",
-    "@opraiz/plugin-ext": "1.72.0",
-    "@opraiz/plugin-ext-headless": "1.72.0"
+    "@opraiz/core": "1.0.0",
+    "@opraiz/plugin-ext": "1.0.0",
+    "@opraiz/plugin-ext-headless": "1.0.0"
   },
   "theiaExtensions": [
     {
@@ -37,6 +37,6 @@
     "clean": "opraizext clean"
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   }
 }

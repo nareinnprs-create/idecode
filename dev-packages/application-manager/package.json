@@ -1,6 +1,6 @@
 {
   "name": "@opraiz/application-manager",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE application manager API.",
   "publishConfig": {
     "access": "public"
@@ -34,9 +34,9 @@
     "@babel/plugin-transform-runtime": "^7.29.7",
     "@babel/preset-env": "^7.29.7",
     "@electron/rebuild": "^4.0.4",
-    "@opraiz/application-package": "1.72.0",
-    "@opraiz/bundle-plugin": "1.72.0",
-    "@opraiz/ffmpeg": "1.72.0",
+    "@opraiz/application-package": "1.0.0",
+    "@opraiz/bundle-plugin": "1.0.0",
+    "@opraiz/ffmpeg": "1.0.0",
     "@types/fs-extra": "^4.0.15",
     "@types/semver": "^7.7.1",
     "babel-loader": "^8.4.1",
@@ -76,7 +76,7 @@
     }
   },
   "devDependencies": {
-    "@opraiz/ext-scripts": "1.72.0"
+    "@opraiz/ext-scripts": "1.0.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"

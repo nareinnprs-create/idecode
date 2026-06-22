@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@opraiz/re-exports",
-  "version": "1.72.0",
+  "version": "1.0.0",
   "description": "OPRAIZ IDECODE re-export helper functions and scripts.",
   "main": "lib/index.js",
   "engines": {
