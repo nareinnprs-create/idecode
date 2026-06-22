@@ -100,7 +100,7 @@ jobs:
         shell: bash
         run: |
           npm run rebuild:browser
-          npm run test:theia
+          npm run test:opraiz
 
       - name: Test (browser)
         run: |
