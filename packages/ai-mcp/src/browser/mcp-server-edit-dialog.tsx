@@ -320,7 +320,8 @@ export class MCPServerEditDialog extends ReactDialog<MCPServerFormData | undefin
 
                         <div className="mcp-form-description">
                             {nls.localize('theia/ai/mcpConfiguration/form/oauthPublicClientDescription',
-                                'OPRAIZ IDECODE uses public OAuth clients with PKCE by default. Provide a client secret only if the server requires a pre-registered confidential client.')}
+                                'OPRAIZ IDECODE uses public OAuth clients with PKCE by default. ' +
+                                'Provide a client secret only if the server requires a pre-registered confidential client.')}
                         </div>
                         <div className="mcp-form-description">
                             {nls.localize('theia/ai/mcpConfiguration/form/oauthSharedCredentialsDescription',

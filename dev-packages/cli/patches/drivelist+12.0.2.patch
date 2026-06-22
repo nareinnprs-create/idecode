@@ -1,0 +1,81 @@
+diff --git a/node_modules/drivelist/js/index.js b/node_modules/drivelist/js/index.js
+index 70fd591..db06b62 100644
+--- a/node_modules/drivelist/js/index.js
++++ b/node_modules/drivelist/js/index.js
+@@ -21,20 +21,71 @@ exports.list = void 0;
+  */
+ const bindings = require("bindings");
+ const os_1 = require("os");
++const child_process = require("child_process");
++const path = require("path");
+ const lsblk_1 = require("./lsblk");
+-const drivelistBindings = bindings('drivelist');
++let drivelistBindings;
++try {
++    drivelistBindings = bindings('drivelist');
++} catch (e) {
++    drivelistBindings = null;
++}
+ function bindingsList() {
++    if (drivelistBindings) {
++        return new Promise((resolve, reject) => {
++            drivelistBindings.list((error, drives) => {
++                if (error != null) {
++                    reject(error);
++                }
++                else {
++                    resolve(drives);
++                }
++            });
++        });
++    }
++    return wmiList();
++}
++function wmiList() {
+     return new Promise((resolve, reject) => {
+-        drivelistBindings.list((error, drives) => {
+-            if (error != null) {
+-                reject(error);
++        const script = `
++            Get-CimInstance -ClassName Win32_LogicalDisk | Select-Object DeviceID, DriveType, VolumeName, Size, FreeSpace, FileSystem, VolumeSerialNumber | ConvertTo-Json
++        `;
++        child_process.execFile('powershell.exe', [
++            '-NoProfile', '-NonInteractive', '-Command', script
++        ], {
++            timeout: 10000,
++            maxBuffer: 1024 * 1024
++        }, (error, stdout) => {
++            if (error) {
++                resolve([]);
++                return;
+             }
+-            else {
++            try {
++                const items = JSON.parse(stdout.trim());
++                const drives = (Array.isArray(items) ? items : [items]).filter(Boolean).map(item => ({
++                    devicePath: item.DeviceID,
++                    displayName: item.DeviceID + (item.VolumeName ? ' (' + item.VolumeName + ')' : ''),
++                    description: item.VolumeName || '',
++                    size: item.Size || null,
++                    mountpoints: [{ path: item.DeviceID + '\\' }],
++                    isReadOnly: false,
++                    isSystem: item.DriveType === 4,
++                    isVirtual: item.DriveType !== 3,
++                    isRemovable: item.DriveType === 2,
++                    isUSB: item.DriveType === 2,
++                    raw: item.DeviceID,
++                    volumeName: item.VolumeName || '',
++                    fileSystem: item.FileSystem || '',
++                    volumeSerialNumber: item.VolumeSerialNumber || ''
++                }));
+                 resolve(drives);
++            } catch (e) {
++                resolve([]);
+             }
+         });
+     });
+ }
++
+ function handleApfs(disks) {
+     const apfs = [];
+     const other = [];

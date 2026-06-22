@@ -10,7 +10,8 @@ This file provides guidance to Claude Code when working with code in this reposi
 - `npm run compile` - Compile TypeScript only (uses `tsc --build` with project references)
 - `npm run lint` - Run ESLint across all packages
 - `npm run lint:fix` - Run ESLint with auto-fix
-- `npm run test` - Run all tests
+- `npm run test` - Run all tests (unit, electron, browser)
+- `npm run test:opraiz` - Run only OPRAIZ unit tests (fastest, during development)
 
 **Important:** `npm run compile` only compiles TypeScript. Before UI testing, you must also run `npm run build:browser` to bundle the frontend. Bundling runs via `opraiz build` (in `@opraiz/cli` / `application-manager`), which defaults to **esbuild** when an `esbuild.mjs` config is present (as in the example apps) and falls back to **webpack** otherwise.
 
