@@ -1,0 +1,116 @@
+name: Release - Package Binaries
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 'Platform to build for (empty = all)'
+        required: false
+        type: choice
+        options:
+          - ''
+          - windows
+          - macos
+          - linux
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    name: Package (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-2022
+            target: win
+            arch: x64
+            artifact_glob: release/*.exe
+          - os: macos-15
+            target: mac
+            arch: x64
+            artifact_glob: release/*.dmg
+          - os: macos-15
+            target: mac
+            arch: arm64
+            artifact_glob: release/*.dmg
+          - os: ubuntu-22.04
+            target: linux
+            arch: x64
+            artifact_glob: release/*.{AppImage,deb}
+
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 24.x
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+        with:
+          node-version: 24.x
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Use Python 3.13
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.13'
+
+      - name: Install system dependencies (Linux)
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y libsecret-1-dev libxkbfile-dev libgconf-2-4 libnss3-dev
+
+      - name: Install and Build
+        shell: bash
+        run: |
+          npm ci
+          npm run build
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Rebuild native modules for Electron
+        shell: bash
+        working-directory: examples/electron
+        run: |
+          npm run rebuild
+
+      - name: Package
+        shell: bash
+        working-directory: examples/electron
+        run: |
+          npm run pack:${{ matrix.target }}
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CSC_LINK: ${{ secrets.CSC_LINK }}
+          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+
+      - name: Upload Binaries to Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@a929a66f162c3ebc476c02d6a03526e609a04b93 # v2.2.0
+        with:
+          files: examples/electron/release/*
+          fail_on_unmatched_files: false
+          generate_release_notes: true
+          append_body: true
+
+      - name: Upload Binaries as Artifacts
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd6a33d61b0f4f7a4f2 # v4.6.1
+        with:
+          name: OPRAIZ-IDECODE-${{ github.ref_name }}-${{ runner.os }}-${{ matrix.arch }}
+          path: examples/electron/release/*
+          if-no-files-found: warn
