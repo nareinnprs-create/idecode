@@ -19,7 +19,10 @@ import * as semver from 'semver';
 import * as fs from '@opraiz/core/shared/fs-extra';
 import { injectable, inject } from '@opraiz/core/shared/inversify';
 import URI from '@opraiz/core/lib/common/uri';
-import { PluginDeployerHandler, PluginDeployerResolver, PluginDeployerResolverContext, PluginDeployOptions, PluginIdentifiers } from '@opraiz/plugin-ext/lib/common/plugin-protocol';
+import {
+    PluginDeployerHandler, PluginDeployerResolver, PluginDeployerResolverContext,
+    PluginDeployOptions, PluginIdentifiers
+} from '@opraiz/plugin-ext/lib/common/plugin-protocol';
 import { FileUri } from '@opraiz/core/lib/node';
 import { VSCodeExtensionUri } from '@opraiz/plugin-ext-vscode/lib/common/plugin-vscode-uri';
 import { OVSXClientProvider } from '../common/ovsx-client-provider';

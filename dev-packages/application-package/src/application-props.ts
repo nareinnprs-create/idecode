@@ -89,7 +89,7 @@ export namespace ElectronFrontendApplicationConfig {
 
         /**
          * The custom uri scheme the application registers to in the operating system.
-          */
+         */
         readonly uriScheme: string;
     }
 }
@@ -193,8 +193,8 @@ export namespace FrontendApplicationConfig {
 
         /**
          * When 'true', the window will reload in case the front end reconnects to a back-end,
-          * but the back end does not have a connection context for this front end anymore.
-          */
+         * but the back end does not have a connection context for this front end anymore.
+         */
         readonly reloadOnReconnect?: boolean;
 
         /**
