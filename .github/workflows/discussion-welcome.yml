@@ -22,16 +22,16 @@ jobs:
             const message = [
               `Hi @${author}, thanks for starting this discussion! 👋`,
               '',
-              'The Theia community will take a look soon. In the meantime, you might find helpful information in:',
-              '- 📖 [Theia Documentation](https://theia-ide.org/docs/)',
-              '- ❓ [FAQ](https://theia-ide.org/docs/faq/)',  
-              '- 💬 [Previous Discussions](https://github.com/eclipse-theia/theia/discussions)',
+              'The OPRAIZ IDECODE team will take a look soon. In the meantime, you might find helpful information in:',
+              '- 📖 [OPRAIZ IDECODE Documentation](https://opraiz.ai/docs/)',
+              '- ❓ [FAQ](https://opraiz.ai/docs/faq/)',
+              '- 💬 [Previous Discussions](https://github.com/opraiz/idecode/discussions)',
               '',
               '---',
               '',
-              '💙 Eclipse Theia is built and maintained by a community of contributors and sponsors. ' +
-              'If Theia is valuable to your work, consider [sponsoring the project](https://theia-ide.org/support/). ' +
-              'For professional support, training, or consulting services, [learn more about available options](https://theia-ide.org/support/).'
+              '💙 OPRAIZ IDECODE is built and maintained by a community of contributors and sponsors. ' +
+              'If OPRAIZ IDECODE is valuable to your work, consider [sponsoring the project](https://opraiz.ai/support/). ' +
+              'For professional support, training, or consulting services, [learn more about available options](https://opraiz.ai/support/).'
             ].join('\n');
 
             await github.graphql(`

@@ -76,6 +76,17 @@ export class AboutDialog extends ReactDialog<void> {
         const monacoLabel = nls.localize('theia/core/about/monacoEditor', 'Monaco Editor Version');
 
         return <>
+            <div className='about-header'>
+                <svg className='about-logo' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                    <rect width='80' height='80' rx='16' fill='url(#a)'/>
+                    <defs><linearGradient id='a' x1='0' y1='0' x2='80' y2='80' gradientUnits='userSpaceOnUse'>
+                        <stop stop-color='#f0a030'/>
+                        <stop offset='1' stop-color='#60a5fa'/>
+                    </linearGradient></defs>
+                    <text x='28' y='52' font-family='Inter,Arial,sans-serif' font-size='34' font-weight='700' fill='white'>O</text>
+                </svg>
+                <span className='about-app-name'>OPRAIZ IDECODE</span>
+            </div>
             <h3>{detailsLabel}</h3>
             <div className='about-details'>
                 {applicationInfo && <p>{`${versionLabel}: ${applicationInfo.version}`}</p>}

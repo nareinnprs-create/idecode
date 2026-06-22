@@ -5,12 +5,12 @@
   "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eclipse-theia/theia.git"
+    "url": "https://github.com/opraiz/idecode.git"
   },
   "bugs": {
-    "url": "https://github.com/eclipse-theia/theia/issues"
+    "url": "https://github.com/opraiz/idecode/issues"
   },
-  "homepage": "https://github.com/eclipse-theia/theia",
+  "homepage": "https://github.com/opraiz/idecode",
   "scripts": {
     "clean": "opraizext clean",
     "compile": "opraizext compile",

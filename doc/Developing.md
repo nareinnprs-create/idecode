@@ -1,10 +1,10 @@
 This file contains tips to help you take (and understand) your first steps in
-the world of Theia development. Are you in a hurry? See the
+OPRAIZ IDECODE development. Are you in a hurry? See the
 [Quick Start](#quick-start).
 
-# How to build Theia and the example applications
+# How to build OPRAIZ IDECODE and the example applications
 
-Theia is a framework to build IDEs, so you can't really "run" Theia itself.
+OPRAIZ IDECODE is a framework to build IDEs, so you can't really "run" it itself.
 However, you can run the example applications included in its repository. One
 is a browser-based IDE and the other is the Electron-based equivalent.
 

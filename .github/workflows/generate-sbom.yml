@@ -7,7 +7,7 @@ on:
     inputs:
       version:
         description: "Version"
-        default: "master"
+        default: "main"
         required: true
 
 env:
@@ -70,7 +70,7 @@ jobs:
     needs: ["generate-sbom"]
     uses: eclipse-csi/workflows/.github/workflows/store-sbom-data.yml@main
     with:
-      projectName: "theia"
+      projectName: "opraiz-idecode"
       projectVersion: ${{ needs.generate-sbom.outputs.project-version }}
       bomArtifact: "sbom"
       bomFilename: "bom.json"

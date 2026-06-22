@@ -16,7 +16,7 @@
 # next version is computed using npm version tool
 on:
   pull_request_target:
-    branches: [master]
+    branches: [main]
     types: [closed]
 
 permissions:

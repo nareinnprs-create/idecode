@@ -36,6 +36,7 @@
   line-height: 30px;
   flex: 0 1 auto;
   font-size: 12px;
+  font-weight: 600;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -44,6 +45,8 @@
   margin-right: auto;
   zoom: 1;
   -webkit-app-region: drag !important;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
 }
 
 #theia-custom-title.relative {
@@ -70,6 +73,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  transition: background 0.15s ease;
 }
 
 #minimize-button {
@@ -90,7 +94,7 @@
 }
 
 #window-controls .control-button:hover {
-  background: rgba(50%, 50%, 50%, 0.2);
+  background: color-mix(in srgb, var(--theia-titleBar-activeBackground, #333) 80%, var(--opraiz-brand-primary, #f0a030));
 }
 
 #window-controls #close-button:hover {
@@ -107,4 +111,9 @@ body:not(.maximized) #restore-button {
 
 body.maximized #maximize-button {
   display: none;
+}
+
+#theia-top-panel {
+  background: var(--theia-titleBar-activeBackground, #323842);
+  border-bottom: 1px solid var(--theia-titleBar-border, #1e1e1e);
 }

@@ -12,6 +12,9 @@
         "applicationName": "OPRAIZ IDECODE Electron Example",
         "reloadOnReconnect": true,
         "electron": {
+          "windowOptions": {
+            "icon": "resources/app-icon-256.png"
+          },
           "splashScreenOptions": {
             "content": "resources/opraiz-logo.svg",
             "height": 90

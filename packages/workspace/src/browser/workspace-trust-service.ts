@@ -501,7 +501,7 @@ export class WorkspaceTrustService {
 
     protected createRestrictedModeTooltip(): MarkdownString {
         const manageTrustLink = `[${WorkspaceCommands.MANAGE_WORKSPACE_TRUST.label}](command:${WorkspaceCommands.MANAGE_WORKSPACE_TRUST.id})`;
-        const docsLink = `[${nls.localize('theia/workspace/trustLearnMore', "Learn more about OPRAIZ IDECODE's Workspace Trust")}](https://theia-ide.org/docs/workspace_trust/)`;
+        const docsLink = `[${nls.localize('theia/workspace/trustLearnMore', "Learn more about OPRAIZ IDECODE's Workspace Trust")}](https://opraiz.ai/docs/workspace-trust)`;
 
         const md = new MarkdownStringImpl('', {
             supportThemeIcons: true,

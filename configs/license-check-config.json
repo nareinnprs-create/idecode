@@ -1,5 +1,5 @@
 {
-    "project": "ecd.theia",
+    "project": "opraiz.idecode",
     "inputFile": "package-lock.json",
     "batch": 50,
     "timeout": 240,

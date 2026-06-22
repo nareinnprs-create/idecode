@@ -31,7 +31,7 @@
   "lcov.watch": [
     {
       "pattern": "**/*.spec.ts",
-      "command": "npm run test:theia"
+      "command": "npm run test:opraiz"
     }
   ],
   "editor.insertSpaces": true,

@@ -32,7 +32,7 @@ export const aiLlamafilePreferencesSchema: PreferenceSchema = {
             \n\
             If you edit an entry (e.g., change the port), any running instance will stop, and you will need to manually start it again.\
             \n\
-            [Learn more about configuring and managing LlamaFiles in the OPRAIZ IDECODE documentation](https://theia-ide.org/docs/user_ai/#llamafile-models).'),
+            [Learn more about configuring and managing LlamaFiles in the OPRAIZ IDECODE documentation](https://opraiz.ai/docs/user-ai#llamafile-models).'),
             type: 'array',
             default: [],
             items: {

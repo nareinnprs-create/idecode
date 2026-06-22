@@ -1,5 +1,32 @@
 # Changelog
 
+## [Unreleased]
+
+### UI/UX Overhaul
+- Custom OPRAIZ IDECODE themes (dark, light, high-contrast) with brand colors
+- Redesigned application shell, sidebar, status bar, menus, and dialogs
+- OPRAIZ branding across all UI components
+- New splash screen, loading animation, and favicon
+- Polished logo, Electron app icons, and view icons
+
+### Infrastructure
+- Fixed CI workflows: all 7 workflows updated from `master` to `main`
+- Fixed `lerna.json` publish config: `push`, `gitTagVersion` enabled
+- Replaced `eclipse-theia-bot` with `opraiz-bot` in publish CI
+- Fixed electron splash screen: added missing `opraiz-logo.svg`
+- Removed old Eclipse Theia logo from electron resources
+- Renamed all Playwright test files from `theia-*` to `opraiz-*`
+- Updated `.vscode/settings.json`, `configs/license-check-config.json`
+- Updated `devfile.yaml` to reference OPRAIZ repository
+
+### Rebranding
+- Rewrote `NOTICE.md`, `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`
+- Updated `doc/Developing.md`, `doc/Plugin-API.md`, `doc/runtime-policy.md`
+- Updated `packages/core/README.md` with OPRAIZ branding
+- Updated `examples/playwright/package.json` URLs
+- Fixed all CI workflow references (Theia → OPRAIZ IDECODE)
+- Filled empty `## Website` section in `README.md`
+
 ## v1.0.0 (2026-06-22)
 
 Initial release of **OPRAIZ IDECODE** — forked from Eclipse Theia.

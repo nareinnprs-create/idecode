@@ -18,7 +18,7 @@ jobs:
     strategy:
       matrix:
         # Full matrix on dispatch (stable releases), linux-only on workflow_run (next).
-        # macos-15 = arm64, macos-15-intel = x64 (aligned with eclipse-theia/theia-ide).
+        # macos-15 = arm64, macos-15-intel = x64.
         os: ${{ fromJSON(github.event_name == 'workflow_dispatch' && '["ubuntu-22.04","windows-2022","macos-15","macos-15-intel"]' || '["ubuntu-22.04"]') }}
     steps:
       - name: Checkout
@@ -75,7 +75,7 @@ jobs:
       ${{ github.event_name == 'workflow_run' &&
           github.event.workflow_run.conclusion == 'success' &&
           github.event.workflow_run.event == 'schedule' &&
-          github.event.workflow_run.head_branch == 'master' }}
+          github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-22.04
     permissions:
       contents: write
@@ -97,7 +97,7 @@ jobs:
           gh release delete next --yes --cleanup-tag 2>/dev/null || true
           gh release create next \
             --title "Native Dependencies - Next ($(date -u '+%Y-%m-%d'))" \
-            --notes "Automated next build of native dependencies from \`master\` (commit \`${PUBLISHED_SHA}\`, $(date -u '+%Y-%m-%d %H:%M UTC'))." \
+            --notes "Automated next build of native dependencies from \`main\` (commit \`${PUBLISHED_SHA}\`, $(date -u '+%Y-%m-%d %H:%M UTC'))." \
             --prerelease \
             --target "${PUBLISHED_SHA}" \
             ./native-deps/native-dependencies-*.zip

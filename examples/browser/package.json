@@ -11,7 +11,8 @@
           "files.enableTrash": false,
           "security.workspace.trust.enabled": false
         },
-        "reloadOnReconnect": true
+        "reloadOnReconnect": true,
+        "favicon": "favicon.svg"
       }
     },
     "backend": {

@@ -1,11 +1,11 @@
-# Theia Plugin API and VS Code extensions support
+# Plugin API and VS Code extensions support
 
-Eclipse Theia is designed for extensibility.
-Therefore, it supports [three extension mechanisms: VS Code extensions, Theia extensions, and Theia plugins](https://theia-ide.org/docs/extensions/).
-In the following, we focus on the mechanics of Theia plugins and Theia’s compatibility with the [VS Code Extension API](https://code.visualstudio.com/api) in order to support running VS Code extensions in Theia.
-This documentation aims to support developers extending Theia’s plugin API to either enhance the extensibility of Theia via plugins and/or increase Theia’s coverage of the VS Code Extension API – and with that the number of VS Code extensions that can be used in Theia.
+OPRAIZ IDECODE is designed for extensibility.
+Therefore, it supports [three extension mechanisms: VS Code extensions, Theia extensions, and Theia plugins](https://opraiz.ai/docs/extensions/).
+In the following, we focus on the mechanics of plugins and OPRAIZ IDECODE's compatibility with the [VS Code Extension API](https://code.visualstudio.com/api) in order to support running VS Code extensions.
+This documentation aims to support developers extending the plugin API to either enhance extensibility and/or increase coverage of the VS Code Extension API – and with that the number of VS Code extensions that can be used.
 
-Theia plugins, as well as VS Code extensions, can be installed and removed from a Theia installation at runtime.
+Plugins, as well as VS Code extensions, can be installed and removed at runtime.
 There are three kinds of plugins that address different extensibility use cases:
 
 - VS Code plugins may extend many different user-facing capabilities of Theia, such as theming, language support, debuggers, tree views, etc., via a clearly defined API.

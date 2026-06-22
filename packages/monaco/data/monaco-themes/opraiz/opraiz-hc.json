@@ -1,0 +1,47 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "OPRAIZ IDECODE High Contrast",
+  "include": "../vscode/hc_black.json",
+  "colors": {
+    "editor.background": "#0d0e1a",
+    "editor.foreground": "#ffffff",
+    "editorCursor.foreground": "#f0a030",
+    "editor.selectionBackground": "#f0a03060",
+    "editorLineNumber.foreground": "#6a6b8a",
+    "editorLineNumber.activeForeground": "#f0a030",
+    "editorBracketMatch.background": "#f0a03030",
+    "editorBracketMatch.border": "#f0a030",
+
+    "sideBar.background": "#0d0e1a",
+    "sideBar.foreground": "#ffffff",
+    "sideBar.border": "#f0a030",
+    "sideBarSectionHeader.background": "#0d0e1a",
+
+    "activityBar.background": "#0d0e1a",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.activeBorder": "#f0a030",
+    "activityBarBadge.background": "#f0a030",
+    "activityBarBadge.foreground": "#0d0e1a",
+
+    "statusBar.background": "#0d0e1a",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.border": "#f0a030",
+
+    "tab.activeBackground": "#0d0e1a",
+    "tab.activeForeground": "#ffffff",
+    "tab.activeBorder": "#f0a030",
+    "tab.inactiveBackground": "#0d0e1a",
+    "tab.inactiveForeground": "#6a6b8a",
+
+    "focusBorder": "#f0a030",
+    "button.background": "#f0a030",
+    "button.foreground": "#0d0e1a",
+    "badge.background": "#f0a030",
+    "badge.foreground": "#0d0e1a",
+    "progressBar.background": "#f0a030",
+    "list.highlightForeground": "#f0a030",
+    "pickerGroup.foreground": "#f0a030",
+    "settings.headerForeground": "#f0a030",
+    "settings.modifiedItemIndicator": "#f0a030"
+  }
+}

@@ -29,11 +29,13 @@ OPRAIZ IDECODE is an extensible framework to develop full-fledged multi-language
 
 <div style='margin:0 auto;width:60%;'>
 
-![Theia](https://raw.githubusercontent.com/eclipse-theia/theia/master/doc/images/theia-screenshot.png)
+![OPRAIZ IDECODE](logo/opraiz-logo.svg)
 
 </div>
 
 ## Website
+
+Visit [https://opraiz.ai](https://opraiz.ai) for more information about OPRAIZ IDECODE.
 
 ## Repositories
 

@@ -89,8 +89,22 @@ export namespace ElectronFrontendApplicationConfig {
 
         /**
          * The custom uri scheme the application registers to in the operating system.
-         */
+          */
         readonly uriScheme: string;
+    }
+}
+
+export namespace FrontendApplicationConfig {
+    export interface Partial extends ApplicationConfig {
+        // ... existing properties ...
+
+        /**
+         * Path to a favicon file (relative to the application root).
+         * e.g. "logo/favicon.svg"
+         *
+         * Defaults to "" (no favicon).
+         */
+        readonly favicon?: string;
     }
 }
 
@@ -129,7 +143,8 @@ export namespace FrontendApplicationConfig {
         defaultLocale: '',
         validatePreferencesSchema: true,
         reloadOnReconnect: false,
-        uriScheme: 'opraiz'
+        uriScheme: 'opraiz',
+        favicon: ''
     };
     export interface Partial extends ApplicationConfig {
 
@@ -178,9 +193,17 @@ export namespace FrontendApplicationConfig {
 
         /**
          * When 'true', the window will reload in case the front end reconnects to a back-end,
-         * but the back end does not have a connection context for this front end anymore.
-         */
+          * but the back end does not have a connection context for this front end anymore.
+          */
         readonly reloadOnReconnect?: boolean;
+
+        /**
+         * Path to a favicon file (relative to the application root).
+         * e.g. "logo/favicon.svg"
+         *
+         * Defaults to '' (no favicon).
+         */
+        readonly favicon?: string;
     }
 }
 

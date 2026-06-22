@@ -60,5 +60,5 @@ jobs:
           branch: bot/translation-update
           title: Translation update for version ${{ env.NEXT_VERSION_NUMBER }}
           commit-message: Translation update for version ${{ env.NEXT_VERSION_NUMBER }}
-          body: Automated translation update for Theia version ${{ env.NEXT_VERSION_NUMBER }}. Triggered by @${{ github.actor }}.
+          body: Automated translation update for OPRAIZ IDECODE version ${{ env.NEXT_VERSION_NUMBER }}. Triggered by @${{ github.actor }}.
           labels: localization

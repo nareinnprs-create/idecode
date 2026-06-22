@@ -106,8 +106,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Configure git
-          git config --local user.email "eclipse-theia-bot@eclipse.org"
-          git config --local user.name "eclipse-theia-bot"
+          git config --local user.email "bot@opraiz.ai"
+          git config --local user.name "opraiz-bot"
 
           # Get the version from lerna.json after publishing
           VERSION=$(node -p "require('./lerna.json').version")

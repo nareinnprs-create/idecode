@@ -36,20 +36,20 @@ export class MonacoThemeRegistry {
     protected readonly logger: ILogger;
 
     initializeDefaultThemes(): void {
-        this.register(require('../../../data/monaco-themes/vscode/dark_theia.json'), {
-            './dark_vs.json': require('../../../data/monaco-themes/vscode/dark_vs.json'),
-            './dark_plus.json': require('../../../data/monaco-themes/vscode/dark_plus.json')
-        }, 'dark-theia', 'vs-dark');
-        this.register(require('../../../data/monaco-themes/vscode/light_theia.json'), {
-            './light_vs.json': require('../../../data/monaco-themes/vscode/light_vs.json'),
-            './light_plus.json': require('../../../data/monaco-themes/vscode/light_plus.json'),
-        }, 'light-theia', 'vs');
-        this.register(require('../../../data/monaco-themes/vscode/hc_theia.json'), {
-            './hc_black.json': require('../../../data/monaco-themes/vscode/hc_black.json')
-        }, 'hc-theia', 'hc-black');
-        this.register(require('../../../data/monaco-themes/vscode/hc_theia_light.json'), {
-            './hc_light.json': require('../../../data/monaco-themes/vscode/hc_light.json')
-        }, 'hc-theia-light', 'hc-light');
+        this.register(require('../../../data/monaco-themes/opraiz/opraiz-dark.json'), {
+            '../vscode/dark_vs.json': require('../../../data/monaco-themes/vscode/dark_vs.json'),
+            '../vscode/dark_plus.json': require('../../../data/monaco-themes/vscode/dark_plus.json')
+        }, 'opraiz-dark', 'vs-dark');
+        this.register(require('../../../data/monaco-themes/opraiz/opraiz-light.json'), {
+            '../vscode/light_vs.json': require('../../../data/monaco-themes/vscode/light_vs.json'),
+            '../vscode/light_plus.json': require('../../../data/monaco-themes/vscode/light_plus.json'),
+        }, 'opraiz-light', 'vs');
+        this.register(require('../../../data/monaco-themes/opraiz/opraiz-hc.json'), {
+            '../vscode/hc_black.json': require('../../../data/monaco-themes/vscode/hc_black.json')
+        }, 'opraiz-hc', 'hc-black');
+        this.register(require('../../../data/monaco-themes/opraiz/opraiz-hc-light.json'), {
+            '../vscode/hc_light.json': require('../../../data/monaco-themes/vscode/hc_light.json')
+        }, 'opraiz-hc-light', 'hc-light');
     }
 
     getThemeData(): ThemeMix;
@@ -173,8 +173,8 @@ export class MonacoThemeRegistry {
 }
 
 export namespace MonacoThemeRegistry {
-    export const DARK_DEFAULT_THEME = 'dark-theia';
-    export const LIGHT_DEFAULT_THEME = 'light-theia';
-    export const HC_DEFAULT_THEME = 'hc-theia';
-    export const HC_LIGHT_THEME = 'hc-theia-light';
+    export const DARK_DEFAULT_THEME = 'opraiz-dark';
+    export const LIGHT_DEFAULT_THEME = 'opraiz-light';
+    export const HC_DEFAULT_THEME = 'opraiz-hc';
+    export const HC_LIGHT_THEME = 'opraiz-hc-light';
 }

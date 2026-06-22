@@ -3,13 +3,13 @@ name: 3PP License Check
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'package-lock.json'
   workflow_dispatch:
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - 'package-lock.json'
   schedule:

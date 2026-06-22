@@ -275,7 +275,7 @@ export class IdeChatWelcomeMessageProvider implements ChatWelcomeMessageProvider
                     defaultMarkdown={`
 ## Ask the {0} AI
 
-Use *@agent* to call a specialized agent and *#* (or {1}) to attach context. [Learn more](https://theia-ide.org/docs/user_ai/#chat).
+Use *@agent* to call a specialized agent and *#* (or {1}) to attach context. [Learn more](https://opraiz.ai/docs/user-ai#chat).
 `}
                     args={[
                         FrontendApplicationConfigProvider.get().applicationName,
@@ -299,7 +299,7 @@ Use *@agent* to call a specialized agent and *#* (or {1}) to attach context. [Le
 
 Use *@AgentName* to talk to a specialized agent, like *@{0}*, *@{1}*, or *@{2}*.
 
-Attach context with *#{3}*, *#{4}*, *#{5}*, or click {6}. [Learn more](https://theia-ide.org/docs/user_ai/#chat).
+Attach context with *#{3}*, *#{4}*, *#{5}*, or click {6}. [Learn more](https://opraiz.ai/docs/user-ai#chat).
 `}
                 args={['Coder', 'Architect', 'Universal', 'file', '_f', 'selectedText', '<span class="codicon codicon-attach"></span>',
                     FrontendApplicationConfigProvider.get().applicationName]}
@@ -385,7 +385,7 @@ This typically happens in custom IDE distributions where IDECODE AI language mod
 
 Set up an API key for [OpenAI]({0}), [Anthropic]({1}), or [GoogleAI]({2}) or configure another provider like Ollama in the settings.
 
-Some agents (e.g. Claude Code) work without a provider. [Learn more](https://theia-ide.org/docs/user_ai/).
+Some agents (e.g. Claude Code) work without a provider. [Learn more](https://opraiz.ai/docs/user-ai).
 `}
                 args={[
                     `command:${CommonCommands.OPEN_PREFERENCES.id}?ai-features.openAiOfficial.openAiApiKey`,
@@ -566,7 +566,7 @@ Once the AI features are enabled, you can access the following views and feature
 - [AI History View]({0})
 - [AI Configuration View]({1})
 
-See [the documentation](https://theia-ide.org/docs/user_ai/) for more information.`}
+See [the documentation](https://opraiz.ai/docs/user-ai) for more information.`}
                 args={[`command:${openAiHistory}`, `command:${OPEN_AI_CONFIG_VIEW.id}`]}
                 markdownRenderer={this.markdownRenderer}
                 className="theia-WelcomeMessage-Content"

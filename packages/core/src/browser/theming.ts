@@ -171,31 +171,31 @@ export class ThemeService {
 export class BuiltinThemeProvider {
 
     static readonly darkTheme: Theme = {
-        id: 'dark',
+        id: 'opraiz-dark',
         type: 'dark',
-        label: 'Dark (IDECODE)',
-        editorTheme: 'dark-theia' // loaded in /packages/monaco/src/browser/textmate/monaco-theme-registry.ts
+        label: 'OPRAIZ IDECODE Dark',
+        editorTheme: 'opraiz-dark' // loaded in /packages/monaco/src/browser/textmate/monaco-theme-registry.ts
     };
 
     static readonly lightTheme: Theme = {
-        id: 'light',
+        id: 'opraiz-light',
         type: 'light',
-        label: 'Light (IDECODE)',
-        editorTheme: 'light-theia' // loaded in /packages/monaco/src/browser/textmate/monaco-theme-registry.ts
+        label: 'OPRAIZ IDECODE Light',
+        editorTheme: 'opraiz-light' // loaded in /packages/monaco/src/browser/textmate/monaco-theme-registry.ts
     };
 
     static readonly hcTheme: Theme = {
-        id: 'hc-theia',
+        id: 'opraiz-hc',
         type: 'hc',
-        label: 'High Contrast (IDECODE)',
-        editorTheme: 'hc-theia' // loaded in /packages/monaco/src/browser/textmate/monaco-theme-registry.ts
+        label: 'OPRAIZ IDECODE High Contrast',
+        editorTheme: 'opraiz-hc' // loaded in /packages/monaco/src/browser/textmate/monaco-theme-registry.ts
     };
 
     static readonly hcLightTheme: Theme = {
-        id: 'hc-theia-light',
+        id: 'opraiz-hc-light',
         type: 'hcLight',
-        label: 'High Contrast Light (IDECODE)',
-        editorTheme: 'hc-theia-light' // loaded in /packages/monaco/src/browser/textmate/monaco-theme-registry.ts
+        label: 'OPRAIZ IDECODE High Contrast Light',
+        editorTheme: 'opraiz-hc-light' // loaded in /packages/monaco/src/browser/textmate/monaco-theme-registry.ts
     };
 
     static readonly themes = [

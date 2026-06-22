@@ -24,5 +24,5 @@ import { isOSX, isWindows } from '../os';
 export const LINUX_ENV_HINT = !isWindows && !isOSX
     ? ' ' + nls.localize('theia/ai-core/preferences/linuxEnvHint',
         'On Linux, make sure the variable is defined in `~/.profile` (not just `~/.bashrc`) if you launch the application from a desktop shortcut.' +
-        ' See the [documentation](https://theia-ide.org/docs/user_ai/#setting-api-keys) for details.')
+        ' See the [documentation](https://opraiz.ai/docs/user-ai#setting-api-keys) for details.')
     : '';

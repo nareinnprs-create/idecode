@@ -72,8 +72,8 @@ export class WorkspaceTrustDialog extends ReactDialog<boolean> {
                     )}
                 </div>
                 <div className="workspace-trust-description">
-                    <a href="https://theia-ide.org/docs/workspace_trust/"
-                        title="https://theia-ide.org/docs/workspace_trust/"
+                    <a href="https://opraiz.ai/docs/workspace-trust"
+                        title="https://opraiz.ai/docs/workspace-trust"
                         target="_blank"
                         rel="noopener noreferrer">
                         {nls.localize('theia/workspace/trustLearnMore', "Learn more about OPRAIZ IDECODE's Workspace Trust")}

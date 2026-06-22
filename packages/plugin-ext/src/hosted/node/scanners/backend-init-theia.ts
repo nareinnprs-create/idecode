@@ -58,7 +58,7 @@ function overrideInternalLoad(): void {
         }
 
         if (!defaultApi) {
-            console.warn(`Could not identify plugin for 'Theia' require call from ${parent.filename}`);
+            console.warn(`Could not identify plugin for 'OPRAIZ' require call from ${parent.filename}`);
             defaultApi = pluginApiFactory(emptyPlugin);
         }
 

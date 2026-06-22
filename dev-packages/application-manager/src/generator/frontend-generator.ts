@@ -64,11 +64,13 @@ export class FrontendGenerator extends AbstractGenerator {
 
     protected async compileIndexHead(frontendModules: Map<string, string>): Promise<string> {
         const preferEsbuild = await new BundlerGenerator(this.pck, this.options).preferESBuild();
+        const favicon = this.pck.props.frontend.config.favicon;
         return `
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   ${preferEsbuild ? '<link rel="stylesheet" href="./bundle.css">' : ''}
+  ${favicon ? `<link rel="icon" href="./${favicon}">` : ''}
   <title>${this.pck.props.frontend.config.applicationName}</title>`;
     }
 

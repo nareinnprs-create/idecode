@@ -199,7 +199,18 @@ export class GettingStartedWidget extends ReactWidget {
      */
     protected renderHeader(): React.ReactNode {
         return <div className='gs-header'>
-            <h1>{this.applicationName}<span className='gs-sub-header'>{' ' + GettingStartedWidget.LABEL}</span></h1>
+            <div className='gs-logo-container'>
+                <svg className='gs-logo' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                    <rect width='80' height='80' rx='16' fill='url(#a)'/>
+                    <defs><linearGradient id='a' x1='0' y1='0' x2='80' y2='80' gradientUnits='userSpaceOnUse'>
+                        <stop stop-color='#f0a030'/>
+                        <stop offset='1' stop-color='#60a5fa'/>
+                    </linearGradient></defs>
+                    <text x='28' y='52' font-family='Inter,Arial,sans-serif' font-size='34' font-weight='700' fill='white'>O</text>
+                </svg>
+                <span className='gs-brand-name'>OPRAIZ IDECODE</span>
+            </div>
+            <h1><span className='gs-sub-header'>{GettingStartedWidget.LABEL}</span></h1>
         </div>;
     }
 

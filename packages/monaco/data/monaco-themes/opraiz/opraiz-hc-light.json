@@ -1,0 +1,38 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "OPRAIZ IDECODE High Contrast Light",
+  "include": "../vscode/hc_light.json",
+  "colors": {
+    "editor.background": "#ffffff",
+    "editor.foreground": "#000000",
+    "editorCursor.foreground": "#d48500",
+    "editor.selectionBackground": "#d4850060",
+    "editorLineNumber.foreground": "#6a6b8a",
+    "editorLineNumber.activeForeground": "#d48500",
+
+    "sideBar.background": "#ffffff",
+    "sideBar.foreground": "#000000",
+    "sideBar.border": "#d48500",
+
+    "activityBar.background": "#ffffff",
+    "activityBar.foreground": "#000000",
+    "activityBar.activeBorder": "#d48500",
+    "activityBarBadge.background": "#d48500",
+    "activityBarBadge.foreground": "#ffffff",
+
+    "statusBar.background": "#ffffff",
+    "statusBar.foreground": "#000000",
+    "statusBar.border": "#d48500",
+
+    "focusBorder": "#d48500",
+    "button.background": "#d48500",
+    "button.foreground": "#ffffff",
+    "badge.background": "#d48500",
+    "badge.foreground": "#ffffff",
+    "progressBar.background": "#d48500",
+    "list.highlightForeground": "#d48500",
+    "pickerGroup.foreground": "#d48500",
+    "settings.headerForeground": "#d48500",
+    "settings.modifiedItemIndicator": "#d48500"
+  }
+}

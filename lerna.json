@@ -10,8 +10,8 @@
       "forcePublish": true,
       "graphType": "all",
       "registry": "https://registry.npmjs.org/",
-      "push": false,
-      "gitTagVersion": false
+      "push": true,
+      "gitTagVersion": true
     }
   }
 }

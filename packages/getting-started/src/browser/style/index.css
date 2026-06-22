@@ -66,6 +66,31 @@ body {
   font-weight: 600;
 }
 
+.gs-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.gs-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--opraiz-brand-radius);
+  object-fit: contain;
+}
+
+.gs-brand-name {
+  font-family: var(--opraiz-brand-font);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: var(--opraiz-brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .gs-hr {
   background-color: var(--theia-contrastBorder);
   height: 1px;

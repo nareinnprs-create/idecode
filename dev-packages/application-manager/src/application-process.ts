@@ -32,6 +32,9 @@ export class ApplicationProcess {
     ) { }
 
     spawn(command: string, args?: string[], options?: cp.SpawnOptions): cp.ChildProcess {
+        if (process.platform === 'win32' && (options?.shell ?? true)) {
+            args = (args || []).map(a => a.includes(' ') ? `"${a}"` : a);
+        }
         return cp.spawn(command, args || [], Object.assign({}, this.defaultOptions, {
             ...options,
             shell: true

@@ -214,7 +214,7 @@ export const emptyPlugin: Plugin = {
     model: {
         id: 'emptyPlugin',
         name: 'emptyPlugin',
-        publisher: 'Theia',
+        publisher: 'OPRAIZ',
         version: 'empty',
         displayName: 'empty',
         description: 'empty',
@@ -233,7 +233,7 @@ export const emptyPlugin: Plugin = {
     pluginUri: 'empty',
     rawModel: {
         name: 'emptyPlugin',
-        publisher: 'Theia',
+        publisher: 'OPRAIZ',
         version: 'empty',
         displayName: 'empty',
         description: 'empty',

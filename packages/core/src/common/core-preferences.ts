@@ -227,15 +227,15 @@ export const corePreferenceSchema: PreferenceSchema = {
         },
         'workbench.colorTheme': {
             type: 'string',
-            enum: ['dark', 'light', 'hc-theia'],
-            enumItemLabels: ['Dark (IDECODE)', 'Light (IDECODE)', 'High Contrast (IDECODE)'],
-            default: 'light',
+            enum: ['opraiz-dark', 'opraiz-light', 'opraiz-hc', 'opraiz-hc-light'],
+            enumItemLabels: ['OPRAIZ IDECODE Dark', 'OPRAIZ IDECODE Light', 'OPRAIZ IDECODE High Contrast', 'OPRAIZ IDECODE High Contrast Light'],
+            default: 'opraiz-light',
             description: nls.localizeByDefault('Specifies the color theme used in the workbench when {0} is not enabled.', '`#window.autoDetectColorScheme#`')
         },
         'workbench.iconTheme': {
             type: ['string'],
             enum: ['none', 'theia-file-icons'],
-            enumItemLabels: [nls.localizeByDefault('None'), 'File Icons (IDECODE)'],
+            enumItemLabels: [nls.localizeByDefault('None'), 'OPRAIZ IDECODE Icons'],
             default: 'none',
             description: nls.localizeByDefault("Specifies the file icon theme used in the workbench or 'null' to not show any file icons.")
         },

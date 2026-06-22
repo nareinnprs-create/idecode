@@ -69,7 +69,7 @@ export const aiCorePreferenceSchema: PreferenceSchema = {
               - `keepToolCalls` (boolean): Whether to keep tool calls in the context\n\
               - `keepThinking` (boolean): Whether to keep thinking messages\n\
             Settings are matched based on specificity (agent: 100, model: 10, provider: 1 points).\n\
-            Refer to [our documentation](https://theia-ide.org/docs/user_ai/#custom-request-settings) for more information.'),
+            Refer to [our documentation](https://opraiz.ai/docs/user-ai#custom-request-settings) for more information.'),
             type: 'array',
             items: {
                 type: 'object',

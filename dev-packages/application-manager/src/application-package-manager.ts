@@ -111,6 +111,10 @@ export class ApplicationPackageManager {
     async copy(): Promise<void> {
         await fs.ensureDir(this.pck.lib('frontend'));
         await fs.copy(this.pck.frontend('index.html'), this.pck.lib('frontend', 'index.html'));
+        const favicon = this.pck.props.frontend.config.favicon;
+        if (favicon && await fs.pathExists(this.pck.path(favicon))) {
+            await fs.copy(this.pck.path(favicon), this.pck.lib('frontend', path.basename(favicon)));
+        }
     }
 
     async build(args: string[] = [], options: GeneratorOptions = {}): Promise<void> {

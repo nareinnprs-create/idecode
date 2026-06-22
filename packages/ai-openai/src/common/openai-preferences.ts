@@ -89,7 +89,7 @@ Best effort is made to convert non-conformant schemas, but errors are still poss
             - specify `reasoningSupport` to opt in to the chat reasoning selector. Provide an object with\
             `supportedLevels` (e.g. `["off", "low", "medium", "high", "auto"]`) and an optional `defaultLevel`.\
             \n\
-            Refer to [our documentation](https://theia-ide.org/docs/user_ai/#openai-compatible-models-eg-via-vllm) for more information.'),
+            Refer to [our documentation](https://opraiz.ai/docs/user-ai#openai-compatible-models) for more information.'),
             default: [],
             items: {
                 type: 'object',

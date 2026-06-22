@@ -73,7 +73,7 @@
     var(--theia-ui-font-size2) * var(--theia-ui-font-scale-factor)
   );
   --theia-ui-icon-font-size: 14px; /* Ensures px perfect FontAwesome icons */
-    --theia-ui-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --theia-ui-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     /* Content fonts: Family, size and color (bright to dark)
      Content font variables are used for typography of user-generated content.
@@ -102,6 +102,20 @@
 
     /* Opacity for disabled mod  */
     --theia-mod-disabled-opacity: 0.4;
+
+    /* OPRAIZ IDECODE brand design tokens */
+    --opraiz-brand-primary: #f0a030;
+    --opraiz-brand-primary-light: #d48500;
+    --opraiz-brand-secondary: #60a5fa;
+    --opraiz-brand-gradient: linear-gradient(135deg, #f0a030, #60a5fa);
+    --opraiz-brand-radius: 8px;
+    --opraiz-brand-radius-sm: 4px;
+    --opraiz-brand-radius-lg: 12px;
+    --opraiz-brand-shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --opraiz-brand-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+    --opraiz-brand-shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+    --opraiz-brand-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --opraiz-brand-transition: 150ms ease;
 }
 
 html,
@@ -152,9 +166,15 @@ blockquote {
     font-size: var(--theia-ui-font-size1);
     line-height: var(--theia-content-line-height);
     padding: 3px 0 3px 8px;
-    border-radius: 2px;
+    border-radius: var(--opraiz-brand-radius-sm);
     min-height: 28px;
     box-sizing: border-box;
+    transition: border-color var(--opraiz-brand-transition), box-shadow var(--opraiz-brand-transition);
+}
+
+.theia-input:focus {
+    border-color: var(--theia-focusBorder);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theia-focusBorder) 25%, transparent);
 }
 
 .theia-input[type="text"] {
@@ -205,15 +225,29 @@ blockquote {
     background-position: center;
     transition: opacity 0.8s;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
+}
+
+.theia-preload::before {
+    content: "OPRAIZ";
+    font-family: var(--opraiz-brand-font);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    background: var(--opraiz-brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .theia-preload::after {
     animation: 1s theia-preload-rotate infinite;
-  color: #777; /* color works on both light and dark themes */
+  color: var(--opraiz-brand-primary); /* color works on both light and dark themes */
   content: "\eb19"; /* codicon-load */
-    font: normal normal normal 72px/1 codicon;
+    font: normal normal normal 48px/1 codicon;
 }
 
 @keyframes theia-preload-rotate {
@@ -284,8 +318,9 @@ blockquote {
 
 .action-label {
     padding: 2px;
-    border-radius: 4px;
+    border-radius: var(--opraiz-brand-radius-sm);
     cursor: pointer;
+    transition: background-color var(--opraiz-brand-transition);
 }
 
 .action-label:hover {
@@ -298,14 +333,26 @@ blockquote {
     min-width: 65px;
     outline: none;
     cursor: pointer;
-    padding: 6px 9px;
+    padding: 6px 14px;
     margin-left: calc(var(--theia-ui-padding) * 2);
-    border-radius: 2px;
+    border-radius: var(--opraiz-brand-radius-sm);
+    font-family: var(--theia-ui-font-family);
+    font-weight: 500;
+    transition: background-color var(--opraiz-brand-transition), box-shadow var(--opraiz-brand-transition), transform var(--opraiz-brand-transition);
+}
+
+.theia-button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--opraiz-brand-shadow-sm);
 }
 
 .theia-button:focus {
     outline: 1px solid var(--theia-focusBorder);
-    outline-offset: 1px;
+    outline-offset: 2px;
+}
+
+.theia-button:active {
+    transform: translateY(0);
 }
 
 .theia-button.secondary {
@@ -317,6 +364,8 @@ blockquote {
     color: var(--theia-button-disabledForeground);
     background-color: var(--theia-button-disabledBackground);
     cursor: default;
+    transform: none;
+    box-shadow: none;
 }
 
 button.secondary[disabled],
@@ -328,11 +377,17 @@ button.secondary[disabled],
 .theia-select {
     color: var(--dropdown-foreground);
     font-size: var(--theia-ui-font-size1);
-    border-radius: 2px;
+    border-radius: var(--opraiz-brand-radius-sm);
     border: 1px solid var(--theia-dropdown-border);
     background: var(--theia-dropdown-background);
     outline: none;
     cursor: pointer;
+    padding: 4px 8px;
+    transition: border-color var(--opraiz-brand-transition);
+}
+
+.theia-select:focus {
+    border-color: var(--theia-focusBorder);
 }
 
 .theia-select option {

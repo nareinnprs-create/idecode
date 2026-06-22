@@ -2,9 +2,9 @@
 
 <br />
 
-<img src='https://raw.githubusercontent.com/eclipse-theia/theia/master/logo/theia.svg?sanitize=true' alt='theia-ext-logo' width='100px' />
+<img src='../../../logo/opraiz-logo.svg' alt='opraiz-ext-logo' width='200px' />
 
-<h2>ECLIPSE THEIA - CORE EXTENSION</h2>
+<h2>OPRAIZ IDECODE - CORE EXTENSION</h2>
 
 <hr />
 
@@ -12,17 +12,17 @@
 
 ## Description
 
-The `@theia/core` extension is the main extension for all Theia-based applications, and provides the main framework for all dependent extensions.
-The extension provides the base APIs for all Theia-based applications, including:
+The `@opraiz/core` extension is the main extension for all OPRAIZ IDECODE-based applications, and provides the main framework for all dependent extensions.
+The extension provides the base APIs for all OPRAIZ IDECODE-based applications, including:
 
 - Application APIs
 - Shell APIs
 - Base Widgets
 - Contribution Points (ex: commands, menu items, keybindings)
 
-## Theia Extension
+## Extension
 
-A Theia extension is a node package declaring `theiaExtensions` property in `package.json`:
+An OPRAIZ IDECODE extension is a node package declaring `theiaExtensions` property in `package.json`:
 
 ```json
 {
@@ -47,20 +47,20 @@ Each extension can consist of the following modules:
 
 An extension module should have a default export of `ContainerModule | Promise<ContainerModule>` type.
 
-## Theia Application
+## Application
 
-A Theia application is a node package listing [Theia extensions](#theia-extension) as dependencies and managed with [Theia CLI](../../dev-packages/cli/README.md).
+An OPRAIZ IDECODE application is a node package listing [extensions](#extension) as dependencies and managed with [OPRAIZ IDECODE CLI](../../dev-packages/cli/README.md).
 
 ## Re-Exports Mechanism
 
-In order to make application builds more stable `@theia/core` re-exports some common dependencies for Theia extensions to re-use. This is especially useful when having to re-use the same dependencies as `@theia/core` does: Since those dependencies will be pulled by Theia, instead of trying to match the same version in your own packages, you can use re-exports to consume it from the framework directly.
+In order to make application builds more stable `@opraiz/core` re-exports some common dependencies for extensions to re-use. This is especially useful when having to re-use the same dependencies as `@opraiz/core` does: Since those dependencies will be pulled by the framework, instead of trying to match the same version in your own packages, you can use re-exports to consume it from the framework directly.
 
 ### Usage Example
 
-Let's take inversify as an example since you will most likely use this package, you can import it by prefixing with `@theia/core/shared/`:
+Let's take inversify as an example since you will most likely use this package, you can import it by prefixing with `@opraiz/core/shared/`:
 
 ```ts
-import { injectable } from '@theia/core/shared/inversify';
+  import { injectable } from '@opraiz/core/shared/inversify';
 
 @injectable()
 export class SomeClass {
@@ -70,11 +70,11 @@ export class SomeClass {
 
 ## Re-Exports
 
-- `@theia/core/electron-shared/...`
+- `@opraiz/core/electron-shared/...`
   - `native-keymap` (from [`native-keymap@^2.5.0`](https://www.npmjs.com/package/native-keymap))
   - `electron` (from [`electron@39.8.7`](https://www.npmjs.com/package/electron/v/39.8.7))
   - `electron-store` (from [`electron-store@^8.2.0`](https://www.npmjs.com/package/electron-store))
-- `@theia/core/shared/...`
+- `@opraiz/core/shared/...`
   - `@lumino/algorithm` (from [`@lumino/algorithm@^2.0.4`](https://www.npmjs.com/package/@lumino/algorithm))
   - `@lumino/commands` (from [`@lumino/commands@^2.3.3`](https://www.npmjs.com/package/@lumino/commands))
   - `@lumino/coreutils` (from [`@lumino/coreutils@^2.2.2`](https://www.npmjs.com/package/@lumino/coreutils))
@@ -85,12 +85,12 @@ export class SomeClass {
   - `@lumino/signaling` (from [`@lumino/signaling@^2.1.5`](https://www.npmjs.com/package/@lumino/signaling))
   - `@lumino/virtualdom` (from [`@lumino/virtualdom@^2.0.4`](https://www.npmjs.com/package/@lumino/virtualdom))
   - `@lumino/widgets` (from [`@lumino/widgets@2.7.5`](https://www.npmjs.com/package/@lumino/widgets/v/2.7.5))
-  - `@theia/application-package` (from [`@theia/application-package@1.72.0`](https://www.npmjs.com/package/@theia/application-package/v/1.72.0))
-  - `@theia/application-package/lib/api` (from [`@theia/application-package@1.72.0`](https://www.npmjs.com/package/@theia/application-package/v/1.72.0))
-  - `@theia/application-package/lib/environment` (from [`@theia/application-package@1.72.0`](https://www.npmjs.com/package/@theia/application-package/v/1.72.0))
-  - `@theia/request` (from [`@theia/request@1.72.0`](https://www.npmjs.com/package/@theia/request/v/1.72.0))
-  - `@theia/request/lib/proxy` (from [`@theia/request@1.72.0`](https://www.npmjs.com/package/@theia/request/v/1.72.0))
-  - `@theia/request/lib/node-request-service` (from [`@theia/request@1.72.0`](https://www.npmjs.com/package/@theia/request/v/1.72.0))
+  - `@opraiz/application-package` (from [`@opraiz/application-package@1.0.0`](https://www.npmjs.com/package/@opraiz/application-package))
+  - `@opraiz/application-package/lib/api` (from [`@opraiz/application-package@1.0.0`](https://www.npmjs.com/package/@opraiz/application-package))
+  - `@opraiz/application-package/lib/environment` (from [`@opraiz/application-package@1.0.0`](https://www.npmjs.com/package/@opraiz/application-package))
+  - `@opraiz/request` (from [`@opraiz/request@1.0.0`](https://www.npmjs.com/package/@opraiz/request))
+  - `@opraiz/request/lib/proxy` (from [`@opraiz/request@1.0.0`](https://www.npmjs.com/package/@opraiz/request))
+  - `@opraiz/request/lib/node-request-service` (from [`@opraiz/request@1.0.0`](https://www.npmjs.com/package/@opraiz/request))
   - `fs-extra` (from [`fs-extra@^4.0.3`](https://www.npmjs.com/package/fs-extra))
   - `fuzzy` (from [`fuzzy@^0.1.3`](https://www.npmjs.com/package/fuzzy))
   - `inversify` (from [`inversify@^6.2.2`](https://www.npmjs.com/package/inversify))
@@ -113,7 +113,7 @@ export class SomeClass {
 
 ## Logging Configuration
 
-It's possible to change the log level for the entire Theia application by
+It's possible to change the log level for the entire application by
 passing it the `--log-level={fatal,error,warn,info,debug,trace}` option.  For
 more fine-grained adjustment, it's also possible to set the log level per
 logger (i.e. per topic).  The `root` logger is a special catch-all logger
@@ -135,7 +135,7 @@ the log level of particular loggers, create a config file such as
 
 where `levels` contains the logger-to-log-level mapping.  `defaultLevel`
 contains the log level to use for loggers not specified in `levels`.  This file
-can then be specified using the `--log-config` option.  Theia will watch that
+can then be specified using the `--log-config` option.  The application will watch that
 file for changes, so it's possible to change log levels at runtime by
 modifying this file.
 
@@ -146,12 +146,12 @@ In addition to exact logger names, you can configure log levels using wildcards 
 - **Exact Match Priority:** An exact match to a logger name will always take the highest priority over any wildcard rules.
 - **Last One Wins:** If an exact match is not found, the system evaluates the wildcard rules. If multiple wildcard rules match a given logger, the *last* matching rule defined in the configuration file takes precedence.
 
-It's unfortunately currently not possible to query Theia for the list of
+It's unfortunately currently not possible to query the application for the list of
 existing loggers.  However, each log message specifies from which logger it
 comes from, which can give an idea, without having to read the code:
 
 ```
-root INFO [parcel-watcher: 10734] Started watching: /Users/captain.future/git/theia/CONTRIBUTING.md
+root INFO [parcel-watcher: 10734] Started watching: /Users/captain.future/git/opraiz-idecode/CONTRIBUTING.md
 ^^^^ ^^^^  ^^^^^^^^^^^^^^^^^^^^^
 ```
 
@@ -164,8 +164,8 @@ Where `root` is the name of the logger and `INFO` is the log level. These are op
     - e.g: `theia.app.com,some.other.domain:3000`
   - The port number is important if your application is not hosted on either `80` or `443`.
   - If possible, you should set this environment variable:
-    - When not set, Theia will allow any origin to access the WebSocket services.
-    - When set, Theia will only allow the origins defined in this environment variable.
+  - When not set, the application will allow any origin to access the WebSocket services.
+  - When set, the application will only allow the origins defined in this environment variable.
 - `FRONTEND_CONNECTION_TIMEOUT`
   - The duration in milliseconds during which the backend keeps the connection contexts for the frontend to reconnect.
   - This duration defaults to '0' if not set.
@@ -173,9 +173,9 @@ Where `root` is the name of the logger and `INFO` is the log level. These are op
 
 ## Additional Information
 
-- [API documentation for `@theia/core`](https://eclipse-theia.github.io/theia/docs/next/modules/_theia_core.html)
-- [Theia - GitHub](https://github.com/eclipse-theia/theia)
-- [Theia - Website](https://theia-ide.org/)
+- [API documentation](https://opraiz.ai/docs)
+- [OPRAIZ IDECODE - GitHub](https://github.com/opraiz/idecode)
+- [OPRAIZ IDECODE - Website](https://opraiz.ai)
 
 ## License
 
@@ -184,5 +184,4 @@ Where `root` is the name of the logger and `INFO` is the log level. These are op
 
 ## Trademark
 
-"Theia" is a trademark of the Eclipse Foundation
-<https://www.eclipse.org/theia>
+"OPRAIZ" and "OPRAIZ IDECODE" are trademarks of OPRAIZ. "Eclipse Theia" is a trademark of the Eclipse Foundation.
