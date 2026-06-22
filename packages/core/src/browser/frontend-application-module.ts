@@ -374,7 +374,7 @@ export const frontendApplicationModule = new ContainerModule((bind, _unbind, _is
     }).inSingletonScope();
 
     bind(AboutDialog).toSelf().inSingletonScope();
-    bind(AboutDialogProps).toConstantValue({ title: 'Theia' });
+    bind(AboutDialogProps).toConstantValue({ title: 'OPRAIZ IDECODE' });
 
     bind(EnvVariablesServer).toDynamicValue(ctx => {
         const connection = ctx.container.get(WebSocketConnectionProvider);

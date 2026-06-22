@@ -228,14 +228,14 @@ export const corePreferenceSchema: PreferenceSchema = {
         'workbench.colorTheme': {
             type: 'string',
             enum: ['dark', 'light', 'hc-theia'],
-            enumItemLabels: ['Dark (Theia)', 'Light (Theia)', 'High Contrast (Theia)'],
+            enumItemLabels: ['Dark (IDECODE)', 'Light (IDECODE)', 'High Contrast (IDECODE)'],
             default: 'light',
             description: nls.localizeByDefault('Specifies the color theme used in the workbench when {0} is not enabled.', '`#window.autoDetectColorScheme#`')
         },
         'workbench.iconTheme': {
             type: ['string'],
             enum: ['none', 'theia-file-icons'],
-            enumItemLabels: [nls.localizeByDefault('None'), 'File Icons (Theia)'],
+            enumItemLabels: [nls.localizeByDefault('None'), 'File Icons (IDECODE)'],
             default: 'none',
             description: nls.localizeByDefault("Specifies the file icon theme used in the workbench or 'null' to not show any file icons.")
         },

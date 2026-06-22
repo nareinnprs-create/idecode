@@ -179,7 +179,7 @@ ${Array.from(frontendModules.values(), jsModulePath => `\
 
 <head>
     <meta charset="UTF-8">
-    <title>Theia — Secondary Window</title>
+    <title>OPRAIZ IDECODE — Secondary Window</title>
     <style>
     html, body {
         overflow: hidden;

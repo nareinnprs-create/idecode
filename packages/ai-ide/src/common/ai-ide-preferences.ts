@@ -26,7 +26,7 @@ export const aiIdePreferenceSchema: PreferenceSchema = {
         [PREFERENCE_NAME_ENABLE_AI]: {
             title: AI_CORE_PREFERENCES_TITLE,
             markdownDescription: '❗ ' + nls.localize('theia/ai/ide/enableAI/mdDescription',
-                'This setting allows you to access the AI capabilities of Theia IDE.\
+                'This setting allows you to access the AI capabilities of OPRAIZ IDECODE.\
             \n\
             Please be aware that AI features may generate\
             continuous requests to the language models (LLMs) you provide access to. This might incur costs that you\
@@ -34,7 +34,7 @@ export const aiIdePreferenceSchema: PreferenceSchema = {
             \n\
             **Please note! The settings below in this section will only take effect\n\
             once the main feature setting is enabled. After enabling the feature, you need to configure at least one\
-            LLM provider below. Also see [the documentation](https://theia-ide.org/docs/user_ai/)**.'),
+            LLM provider below. Also see [the documentation](https://opraiz.ai/docs/user_ai/)***.'),
             type: 'boolean',
             default: false,
         },

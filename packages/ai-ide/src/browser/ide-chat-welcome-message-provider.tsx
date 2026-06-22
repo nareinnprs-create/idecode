@@ -352,12 +352,12 @@ Attach context with *#{3}*, *#{4}*, *#{5}*, or click {6}. [Learn more](https://t
 
 No language model provider packages are installed in this IDE.
 
-This typically happens in custom IDE distributions where Theia AI language model packages have been omitted.
+This typically happens in custom IDE distributions where IDECODE AI language model packages have been omitted.
 
 **To resolve this:**
 
 - Install one or more language model provider packages (e.g., '@opraiz/ai-openai', '@opraiz/ai-anthropic', '@opraiz/ai-ollama')
-- Or use agents that don't require Theia Language Models (e.g., Claude Code)
+- Or use agents that don't require IDECODE Language Models (e.g., Claude Code)
                 `}
                     markdownRenderer={this.markdownRenderer}
                     className="theia-WelcomeMessage-Content"
@@ -370,7 +370,7 @@ This typically happens in custom IDE distributions where Theia AI language model
                     </button>
                 </div>
                 <small className="theia-WelcomeMessage-Hint">
-                    {nls.localize('theia/ai/ide/bypassHint', 'Some agents like Claude Code don\'t require Theia Language Models')}
+                    {nls.localize('theia/ai/ide/bypassHint', 'Some agents like Claude Code don\'t require IDECODE Language Models')}
                 </small>
             </div>;
         }

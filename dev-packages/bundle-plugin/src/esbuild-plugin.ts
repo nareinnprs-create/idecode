@@ -226,14 +226,13 @@ class PluginImpl implements Plugin {
             throw new Error('The `outdir` option is required.');
         }
         build.onResolve({ filter: /^@vscode\/windows-ca-certs$/ }, () => {
-            const windows = process.platform === 'win32';
-            return {
-                path: windows
-                    ? join(resolveModulePath('@vscode/windows-ca-certs'), 'build', 'Release', 'crypt32.node')
-                    : '',
-                // Simply mark the dependency as external on non-Windows platforms
-                external: !windows
-            };
+            const caCertsPath = join(resolveModulePath('@vscode/windows-ca-certs'), 'build', 'Release', 'crypt32.node');
+            try {
+                fs.accessSync(caCertsPath);
+            } catch {
+                return { external: true };
+            }
+            return { path: caCertsPath, external: false };
         });
         build.onResolve({ filter: /\.\/build\/Release\/keymapping$/ }, () => ({
             path: join(resolveModulePath('native-keymap'), 'build', 'Release', 'keymapping.node'),
@@ -382,7 +381,7 @@ const bindingsReplacement = (bindings: Record<string, string>) => {
     const cases = [];
 
     for (const [module, node] of Object.entries(bindings)) {
-        cases.push(`${' '.repeat(8)}case '${module}': return require('${node}');`);
+        cases.push(`${' '.repeat(8)}case '${module}': try { return require('${node}'); } catch (e) { return { list: (cb) => cb(null, []) }; }`);
     }
 
     return `

@@ -27,7 +27,7 @@ type EOL = '\r\n' | '\n' | '\r';
 yargs
     .command(
         'generate [packageName]',
-        'Generate Theia re-exports',
+        'Generate OPRAIZ IDECODE re-exports',
         cli => cli
             .positional('packageName', {
                 type: 'string',

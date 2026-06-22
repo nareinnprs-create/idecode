@@ -1,5 +1,5 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Light High Contrast (Theia)",
+  "name": "Light High Contrast (IDECODE)",
   "include": "./hc_light.json"
 }

@@ -130,7 +130,7 @@ Example configuration:\n\
                         markdownDescription: nls.localize('theia/ai/mcp/servers/oauth/mdDescription',
                             'Optional OAuth 2.1 configuration for remote MCP servers that require authorization. ' +
                             'The presence of this object enables OAuth for the server; remove it to disable OAuth. ' +
-                            'Theia uses public clients with PKCE by default; ' +
+                            'OPRAIZ IDECODE uses public clients with PKCE by default; ' +
                             'configure a client secret only for servers that require a pre-registered confidential client. ' +
                             'Changes take effect after restarting the MCP server.'),
                         properties: {
@@ -138,7 +138,7 @@ Example configuration:\n\
                                 type: 'string',
                                 title: nls.localize('theia/ai/mcp/servers/oauth/clientId/title', 'Client ID'),
                                 markdownDescription: nls.localize('theia/ai/mcp/servers/oauth/clientId/mdDescription',
-                                    'Optional static OAuth client ID. If omitted, Theia attempts dynamic client registration.'),
+                                    'Optional static OAuth client ID. If omitted, OPRAIZ IDECODE attempts dynamic client registration.'),
                             },
                             clientSecret: {
                                 type: 'string',

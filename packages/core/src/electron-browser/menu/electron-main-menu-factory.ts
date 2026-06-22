@@ -283,7 +283,7 @@ export class ElectronMainMenuFactory extends BrowserMainMenuFactory {
 
     protected createOSXMenu(): MenuDto {
         return {
-            label: 'Theia',
+            label: 'OPRAIZ IDECODE',
             submenu: [
                 {
                     role: 'about'

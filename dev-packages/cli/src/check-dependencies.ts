@@ -98,7 +98,7 @@ function readWorkspaceGlobsFromPackageJson(): string[] {
     const rootPackageJson = path.join(process.cwd(), PACKAGE_JSON);
     if (!fs.existsSync(rootPackageJson)) {
         console.error('Directory does not contain a package.json with defined workspaces');
-        console.info('Run in the root of a Theia project or specify them via --workspaces');
+        console.info('Run in the root of an OPRAIZ IDECODE project or specify them via --workspaces');
         process.exit(1);
     }
     return require(rootPackageJson).workspaces ?? [];
@@ -319,7 +319,7 @@ function versionLine(pckg: Package): string {
 function printHints(issues: DependencyIssue[]): void {
     console.log();
     if (issues.find(i => i.issueType === 'theia-version-mix')) {
-        console.log('⛔ A mix of Theia versions is very likely leading to a broken application.');
+        console.log('⛔ A mix of OPRAIZ IDECODE versions is very likely leading to a broken application.');
     }
     console.log(`ℹ️  Use ${chalk.bold('npm ls <package-name>')} to find out why those multiple versions of a package are pulled.`);
     console.log('ℹ️  Try to resolve those issues by finding package versions along the dependency chain that depend on compatible versions.');

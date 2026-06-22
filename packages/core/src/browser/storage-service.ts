@@ -96,11 +96,11 @@ export class LocalStorageService implements StorageService {
         const CLEAR_STORAGE_ACTION = 'Clear Local Storage';
         const ERROR_MESSAGE = `Your preferred browser's local storage is almost full.
         To be able to save your current workspace layout or data, you may need to free up some space.
-        You can refer to Theia's documentation page for instructions on how to manually clean
+        You can refer to OPRAIZ IDECODE's documentation page for instructions on how to manually clean
         your browser's local storage or choose to clear all.`;
         this.messageService.warn(ERROR_MESSAGE, READ_INSTRUCTIONS_ACTION, CLEAR_STORAGE_ACTION).then(async selected => {
             if (READ_INSTRUCTIONS_ACTION === selected) {
-                this.windowService.openNewWindow('https://github.com/eclipse-theia/theia/wiki/Cleaning-Local-Storage', { external: true });
+                this.windowService.openNewWindow('https://github.com/nareinnprs-create/idecode/wiki/Cleaning-Local-Storage', { external: true });
             } else if (CLEAR_STORAGE_ACTION === selected) {
                 this.clearStorage();
             }

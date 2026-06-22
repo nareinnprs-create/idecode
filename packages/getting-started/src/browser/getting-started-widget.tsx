@@ -85,7 +85,7 @@ export class GettingStartedWidget extends ReactWidget {
     protected readonly extensionUrl = 'https://opraiz.ai/docs/authoring_extensions';
     protected readonly pluginUrl = 'https://opraiz.ai/docs/authoring_plugins';
     protected readonly userAIDocUrl = 'https://opraiz.ai/docs/user_ai/';
-    protected readonly theiaAIDocUrl = 'https://opraiz.ai/docs/theia_ai/';
+    protected readonly idecodeAIDocUrl = 'https://opraiz.ai/docs/theia_ai/';
     protected readonly dataUsageTelemetryUrl = 'https://opraiz.ai/docs/data_usage_telemetry/';
     protected readonly ghProjectUrl = 'https://github.com/opraiz/idecode/issues/new/choose';
 
@@ -456,10 +456,10 @@ For more details, please visit&nbsp;[the documentation]({0}).\\
 \\
 We welcome your feedback, contributions, and sponsorship! To support the ongoing development of the AI capabilities please visit the&nbsp;[Github Project]({1}).&nbsp;
 Thank you for being part of our community!\\
-The AI features are built on the framework Theia AI. If you want to build a custom AI-powered tool or IDE, Theia AI has been published as stable release.
-Check out [the Theia AI documentation]({2})!
+The AI features are built on the framework IDECODE AI. If you want to build a custom AI-powered tool or IDE, IDECODE AI has been published as stable release.
+Check out [the IDECODE AI documentation]({2})!
 `}
-                        args={[this.userAIDocUrl, this.ghProjectUrl, this.theiaAIDocUrl, this.applicationName]}
+                        args={[this.userAIDocUrl, this.ghProjectUrl, this.idecodeAIDocUrl, this.applicationName]}
                         markdownRenderer={this.markdownRenderer}
                     />
                     <div className='gs-action-container'>

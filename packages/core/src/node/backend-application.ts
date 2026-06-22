@@ -327,7 +327,7 @@ export class BackendApplication {
             // address should be defined at this point
             const address = server.address()!;
             const url = typeof address === 'string' ? address : this.getHttpUrl(address, this.cliParams.ssl);
-            this.logger.info(`Theia app listening on ${url}.`);
+            this.logger.info(`OPRAIZ IDECODE app listening on ${url}.`);
             deferred.resolve(server);
         });
 

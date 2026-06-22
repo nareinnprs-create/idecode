@@ -47,7 +47,7 @@ export class IconThemeApplicationContribution implements FrontendApplicationCont
 export class DefaultFileIconThemeContribution implements IconTheme, IconThemeContribution {
 
     readonly id = 'theia-file-icons';
-    readonly label = 'File Icons (Theia)';
+    readonly label = 'File Icons (IDECODE)';
     readonly hasFileIcons = true;
     readonly hasFolderIcons = true;
     readonly showLanguageModeIcons = true;

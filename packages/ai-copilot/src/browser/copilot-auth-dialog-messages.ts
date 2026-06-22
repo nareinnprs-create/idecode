@@ -50,7 +50,7 @@ export const DEFAULT_COPILOT_AUTH_DIALOG_MESSAGES: CopilotAuthDialogMessages = {
     get privacyNotice(): string {
         return nls.localize(
             'theia/ai/copilot/auth/privacy',
-            'Theia is an open-source project. We only request access to your GitHub username ' +
+            'OPRAIZ IDECODE is an open-source project. We only request access to your GitHub username ' +
             'to connect to GitHub Copilot services — no other data is accessed or stored.'
         );
     }

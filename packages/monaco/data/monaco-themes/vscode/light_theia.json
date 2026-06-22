@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Light (Theia)",
+  "name": "Light (IDECODE)",
   "include": "./light_plus.json",
   "colors": {
     "activityBar.background": "#ececec",

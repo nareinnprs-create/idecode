@@ -241,7 +241,7 @@ const commandOptionsSchema: IJSONSchema = {
         cwd: {
             type: 'string',
             description: nls.localize('theia/task/schema/commandOptions/cwd',
-                "The current working directory of the executed program or script. If omitted Theia's current workspace root is used."),
+                "The current working directory of the executed program or script. If omitted OPRAIZ IDECODE's current workspace root is used."),
             default: '${workspaceFolder}'
         },
         env: {
@@ -429,7 +429,7 @@ const problemMatcherObject: IJSONSchema = {
         owner: {
             type: 'string',
             description: nls.localize('theia/task/schema/problemMatcherObject/owner',
-                "The owner of the problem inside Theia. Can be omitted if base is specified. Defaults to 'external' if omitted and base is not specified.")
+                "The owner of the problem inside OPRAIZ IDECODE. Can be omitted if base is specified. Defaults to 'external' if omitted and base is not specified.")
         },
         source: {
             type: 'string',

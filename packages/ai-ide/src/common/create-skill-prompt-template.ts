@@ -51,7 +51,7 @@ Skills without proper structure fail silently. Every time. The agent won't find 
 ## Skill Location
 Skills can be stored in either of two workspace directories:
 - \`.agents/skills/<skill-name>/SKILL.md\` (preferred, follows the Agent Skills convention)
-- \`.prompts/skills/<skill-name>/SKILL.md\` (Theia-specific location)
+- \`.prompts/skills/<skill-name>/SKILL.md\` (IDECODE-specific location)
 
 If the user does not specify a location, ask which one to use, defaulting to \`.agents/skills/\`.
 
