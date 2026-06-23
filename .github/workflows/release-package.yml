@@ -107,7 +107,7 @@ jobs:
 
       - name: Upload Binaries to Release
         if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@a929a66f162c3ebc476c02d6a03526e609a04b93 # v2.2.0
+        uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # v3.0.1
         with:
           files: examples/electron/release/*
           fail_on_unmatched_files: false
@@ -115,7 +115,7 @@ jobs:
           append_body: true
 
       - name: Upload Binaries as Artifacts
-        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd6a33d61b0f4f7a4f2 # v4.6.1
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: OPRAIZ-IDECODE-${{ github.ref_name }}-${{ runner.os }}-${{ matrix.arch }}
           path: examples/electron/release/*
